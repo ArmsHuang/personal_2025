@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '会员登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx', bgPad: true },
+        { legend: '联繫我们', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '语言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: 'index.html' },
+          { legend: '繁体中文', link: '../TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '关于我们',  link: 'about_us.html',
+       nodes: [
+            { legend: '我们的优势', link: 'us_advantage.html' },
+            { legend: '全球未来发展', link: 'global_future.html' },
+            { legend: '我们的成员', link: 'team.html' },
+            { legend: '合作伙伴', link: 'partner.html' },
+            { legend: '网站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理财项目',
+       nodes: [
+             { legend: '外汇产品', link: 'fx_product.html' },
+            { legend: '与MS交易比特币', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培训',
+       nodes: [
+             { legend: '新手入门', link: 'gettingstarted.html' },
+            { legend: '外汇市场特点', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差价合约', link: 'cfds.html' },
+            { legend: '基本知识', link: 'basics.html' },
+            { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技术分析', link: 'technical_analysis.html' },
+            { legend: '常用术语', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '关于我们',  link: 'about_us.html',
+        children:  [
+          { legend: '我们的优势', link: 'us_advantage.html'},
+          { legend: '全球未来的发展', link: 'global_future.html'},
+          { legend: '我们的成员', link: 'team.html'},
+          { legend: '合作伙伴', link: 'partner.html'},
+          { legend: '网站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理财项目',
+        children:  [
+           { legend: '外汇产品', link: 'fx_product.html'},
+          { legend: '与MS交易比特币', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培训',
+        children:  [
+          { legend: '新手入门', link: 'gettingstarted.html'},
+          { legend: '外汇市场特点', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差价合约', link: 'cfds.html'},
+          { legend: '基本知识', link: 'basics.html'},
+          { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技术分析', link: 'technical_analysis.html'},
+          { legend: '常用术语', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>多重时间段分析</h2>
+          
+          <p>多重时间段分析是透过观察相同货币对多个不同时间段图表而分析货币对的方法。其优点是藉观察较长的时间段，然后再看较短的时间段，继而再看更短的时间段，交易者将可对货币对如何移动有更详细的瞭解，从而在更有根据的情况下建立交易。</p>
+            
+            <p>一般而言，交易者会选择三个时间段，而有关时间段将会根据交易者的个人交易策略而定。较长线交易者可以选择每週、每日及4小时图。较短线交易者可以选择4小时、1小时及15分钟图。重点是以当中最长线的图表来厘定"整体趋势"及应朝哪一个方向买卖。其后使用较短的时间段来"微调"在该个方向哪一个水准建立持仓。</p>
+            
+            <p>您可能曾经听说过"趋势中存在趋势"。例如，在日图中，趋势可能是一个升势，而在4小时图中，则可能是跌势，在1小时图中可能是持平… 所有趋势都是关于同一个货币对。</p>
+            
+            <p>在此情景下，整体趋势以日图为基础 – 即上升。然而，在这个升势之内，于4小时的时间段内则出现转势。转势很可能在某一点结束，而4小时时间段则与日图趋于一致。同样道理，在4小时时间段记忆体在1小时的趋势。随着1小时趋势与4小时趋于一致，而4小时与日图趋于一致，一个有机会更高的入市点将会出现。</p>
+            
+            <p>总括来说，当最短的时间段完成转势(转势指我们在日图中注意到与趋势相反的走势)，及开始重新朝每日趋势的方向移动时，我们便希望建立交易。这就是我们的入市信号。</p>
+            
+            <p>试想像它们是一个密码锁的制栓，全部都有次序地趋于一致。</p>
+            
+            <p>透过使用数个时间段，交易者可以在三个不同层面上深入瞭解货币对，及学习运用该些资料，以成功地在时间段所示成功机率最高的时候建立交易。</p>
+            
+            <p>现在看看澳元/美元的一些图表。</p>
+            	<p class="margin_auto">
+                	<img  src="images/timeframe1_chg_tc.jpg" alt="">
+                </p>
+            
+            
+            <p>在以上日图，我们可以看到货币对正处于升势。单凭上述资料，我们知道，我们只希望寻找买入的机会。由于现在已处于这次看升势的最顶端，所以并非买入货币对的最佳时间，因为可能即将会出现转势。</p>
+            
+            <p>现在就看看较短时间段的图表能否说明这项交易。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/timeframe2_chg_tc.jpg" alt="">
+                </p>
+            
+            <p>在这个4小时图，我们可以看到货币对仍然处于升势之中(更高的最高价及更高的最低价)，以及一个支援位元已在图表的红线位置建立。若支援位元能够守住，交易者可在该点建立长仓，因为货币对其后将会再次朝日图升势的方向移动。(然而，若蜡烛的收市价低于支持位，我们可等到形成另一个底部后才建立长仓。)较为保守的交易者可能会等到货币对突破黑线的阻力位后才建立长仓。</p>
+            
+            <p>这里与多重时间段分析有关的重点是在作出入市决定前，我们可以运用较短时间段图表来仔细地研究货币对的买卖情况。</p>
+            
+            <p>现在看看此货币对的1小时图</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/timeframe3_chg_tc.jpg" alt="">
+                </p>
+            
+            <p>从1小时图可见，支持位(红线)曾被多次测试。这巩固了此一支持位可能会守得住的看法，及可能会成为再次向上攀升的起点。若收市价低于支持位，如4小时图所示，我们可待至建立新底部后才建立长仓。然而，若要有更大的信心，交易者可待至升穿阻力位，及蜡烛的收市价高于阻力位(黑线)为止。收市价处于该水准之上，显示买家再次控制此时间段。</p>
+            
+            <p>藉使用澳元/美元这三个不同时间段的图表，我们期望能显示出交易者可如何运用多重时间段分析来加深对货币对如何运作的认识及如何优化在趋势方向中入市的瞭解，并且对此获得更大的信心。</p>
+
+            <p><a href="technical_analysis.html">回目录</a>
+                <br/>
+                <a href="determine_trends.html">上一篇</a>
+                <a href="support_resistance.html">下一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保护客户资料声明</a><a class="footer__nav__node" href="high_risk_warning.html">风险警告</a><a class="footer__nav__node" href="execution_policy.html">交易执行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>电话:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

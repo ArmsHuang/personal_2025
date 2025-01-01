@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["ShowBox","Vue","el","data","headerShow","navNodesShow"],"mappings":";;AAAA,IAAAA,UAAA,IAAAC,GAAA,CAAA;AACAC,MAAA,YADA;AAEAC,QAAA;AACAC,gBAAA,KADA;AAEAC,kBAAA;AAFA;AAFA,CAAA,CAAA","file":"script.js","sourcesContent":["let ShowBox = new Vue({\n  el: '.container',\n  data: {\n    headerShow: false,\n    navNodesShow: false\n  }\n})\n"]}

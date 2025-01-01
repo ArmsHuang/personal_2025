@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '關於我們',  link: 'about_us.html',
+        children:  [
+          { legend: '我們的優勢', link: 'us_advantage.html'},
+          { legend: '全球未來的發展', link: 'global_future.html'},
+          { legend: '我們的成員', link: 'team.html'},
+          { legend: '合作夥伴', link: 'partner.html'},
+          { legend: '網站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理財項目',
+        children:  [
+           { legend: '外匯產品', link: 'fx_product.html'},
+          { legend: '與MS交易比特幣', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培訓',
+        children:  [
+          { legend: '新手入門', link: 'gettingstarted.html'},
+          { legend: '外匯市場特點', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差價合約', link: 'cfds.html'},
+          { legend: '基本知識', link: 'basics.html'},
+          { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技術分析', link: 'technical_analysis.html'},
+          { legend: '常用術語', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>技術分析的基本知識</h2>
+          
+          <p>本節我們將會看看不同類別的圖表，交易者可以利用它們來對貨幣對進行技術分析。</p>
+            
+            <p><strong>圖表類別</strong><br/>技術分析在於觀察及詮釋圖表，以識別出建立交易的最大可能性。</p>
+            
+            <p>三種最廣泛使用的圖表類別分別是線型圖、柱型圖及燭柱圖。以下是相關例子。</p>
+            <br/>
+            	<p class="margin_auto">
+                	<img  src="images/basictechs.jpg" alt=""> 線型圖
+                </p>
+            
+            
+            <p>在上述三類圖表中，最基本的是線型圖。這是將一系列資料點(例如貨幣對的收市價)連結成線而制定的。從上例可見，該條線基本上跟隨價格行為，因此交易者可以根據所示的過往資料點厘定趨勢的方向。通常來說，線型圖會用於較長的時間段,以簡單快速地判斷貨幣對在指定時間段內有什麼樣的走勢。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/basictechs2.jpg" alt=""> 柱型圖
+                </p>
+            
+            <p>柱型圖能為交易者提供寶貴的額外資料。現在我們就放大柱型圖，集中於一條柱子，以看看它能為我們提供什麼資料。</p>
+            
+            <p>我們所看的是日圖 – 即每一條柱子代表貨幣對在24小時內的買賣價。特別是，柱子將會顯示此貨幣對於開市時的買賣價、于時間段內所達致的最高及最低價，以及貨幣對當日的最後買賣價。下圖顯示了這些資料。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/basictechs3_chg_tc.jpg" alt=""> 柱型圖
+                </p>
+            
+            <p>(新每日柱子將於美東時間下午5開市，因為對上一條柱子在同一時間收市。)<br/>
+
+這裏所提供的額外資料可大大幫助交易者。例如，交易者可以得知在此時間段內貨幣對繼續拾級而上，因為收市價高於開市價。<br/>
+
+最後，我們將會看看最廣為使用的外匯交易圖表類型 – 燭柱圖。<br/>
+
+以下您將會看到燭柱圖詮釋的基本知識。</p>
+			
+            <p class="margin_auto">
+                	<img  src="images/basictechs4_chg_tc.jpg" alt="">
+                </p>
+            <p class="margin_auto">
+                	<img  src="images/basictechs5.jpg" alt="">
+                </p>
+            <p>只需稍為看看每日燭柱圖，交易者便可即時瞭解到使用這種圖表相較於線型圖及柱型圖的優點。根據蠟燭的顏色 – 藍色代表收市價較開市價為高的看好蠟燭，而紅色代表收市價較開市價為低的看淡蠟燭 – 便能明顯看出哪些日子有向上動力，及哪些日子有向下動力。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/basictechs6_chg_tc.jpg" alt="">
+                </p>
+            
+            <p>現在仔細看看上圖。</p>
+            
+            <p>您可以看到，燭柱圖所提供的資料(最高、最低、開市及收市價)與柱型圖所提供的資料相同。然而，當以這種形式表達時，資料便變得一目了然，當中的原因是蠟燭的顏色。</p>
+            
+            <p>研究任何蠟燭時，即看好蠟燭及看淡蠟燭，燭芯頂部及燭芯底部分別表示貨幣對在該時間段內的最高及最低價。除了顏色之外，看好蠟燭及看淡蠟燭之間的主要分別是開市及收市價的位置。</p>
+            
+            <p>由於藍色蠟燭的收市價高於開市價，燭身頂部就是收市價，而燭身底部就是開市價。就紅色看淡蠟燭而言，燭身頂部就是貨幣對在該時間段內的開市價，而燭身底部就是貨幣對的收市價 … 即看好蠟燭的相反。</p>
+            
+            <p>在使用燭柱圖時，請緊記，當您使用不同時間段時，每個燭柱圖將只代表該個時間段。因此，若您所看的是日圖，每支蠟燭代表一日(24小時)。若您所參考的是4小時圖，每支蠟燭所代表的是4小時，如此類推。在此處所呈示的三種圖表當中，燭柱圖以一種最容易一目了然的方式提供所有必要資料。</p>
+            
+            <p>現在您應該瞭解到這三種主要圖表及如何在交易時運用它們。</p>
+            
+            <p><a href="technical_analysis.html">回目錄</a>
+                <br/>
+                <a href="determine_trends.html">下一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

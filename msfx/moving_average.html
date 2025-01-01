@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+     { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+     { legend: 'CONTACT US', link: 'content_us.html' }
+   ],
+   language: {
+     legend: 'LANGUAGE',
+     nodes: [
+       { legend: 'ENGLISH', link: 'index.html' },
+       { legend: '简体中文', link: 'CN/index.html' },
+       { legend: '繁体中文', link: 'TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: 'ABOUT US',  link: 'about_us.html',
+       nodes: [
+         { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+         { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+         { legend: 'OUR GROUPS', link: 'team.html' },
+         { legend: 'PARTNERSHIP', link: 'partner.html' },
+         { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+       ]
+     },
+     {
+       legend: 'FINANCE PROJECT',
+       nodes: [
+         { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+         { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+         { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: 'EDUCATION',
+       nodes: [
+         { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+         { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+         { legend: 'AN STP BROKER', link: 'stp.html' },
+         { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+         { legend: 'TRADING BASICS', link: 'basics.html' },
+         { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+         { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+         { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+         { legend: 'GLOSSARY', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: 'ABOUT US',  link: 'about_us.html',
+        children:  [
+          { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+          { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+          { legend: 'OUR GROUPS', link: 'team.html' },
+          { legend: 'PARTNERSHIP', link: 'partner.html' },
+          { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+      ]
+    },
+    {
+       legend: 'FINANCE PROJECT',
+        children:  [
+          { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+          { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+          { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+      ]
+    },
+      {
+        legend: 'EDUCATION',
+        children:  [
+          { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+          { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+          { legend: 'AN STP BROKER', link: 'stp.html' },
+          { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+          { legend: 'TRADING BASICS', link: 'basics.html' },
+          { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+          { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+          { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+          { legend: 'GLOSSARY', link: 'terms.html' },
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>Moving Average</h2>
+          
+          <p>Probably more money is being traded today using moving averages than with all other technical indicators combined. They are very simple to calculate, and can be used for everything from finding very long term monthly trends to setting stops for day trading, and also for determining solid entry and exit points in the market.</p>
+            
+            
+            <p>Moving averages smooth out market fluctuations and short-term volatility to give the trader some idea of which way the market is going. That in itself is a useful tool for any trader, but they offer much more information.</p>
+            
+            <p>A moving average is an indicator that shows the average value of a security's price over a period of time. When calculating a moving average, a mathematical analysis of the security's average value over a predetermined time period is made. When calculating a moving average, you specify the time span to calculate the average price (e.g., 25 days). As the security's price changes, its average price moves up or down.</p>
+            
+            <p>A "simple" moving average is calculated by adding the security's prices for the most recent "n" time periods and then dividing by "n." For example, adding the closing prices of a security for most recent 25 days and then dividing by 25. The result is the security's average price over the last 25 days. This calculation is done for each period in the chart.</p>
+
+            <p><strong>Interpretation</strong><br/>The most popular method of interpreting a moving average is to compare the relationship between a moving average of the security's price with the security's price itself. A buy signal is generated when the security's price rises above its moving average and a sell signal is generated when the security's price falls below its moving average.</p>
+            
+            <p>This signal is generated because it is considered that the moving average line is a strong level of support or resistance for the price. The price should bounce off the moving average. If it does not, and breaks through, then it should continue in that direction until it finds a new level to rest at.</p>
+            
+            <p>Short term moving averages tend to generate more buying/selling signals. However, some of them are false.</p>
+            
+            <p>Long term moving averages tend to be more reliable and generate fewer entry signals. However, as the move may be well under way, before the signal is generated, a substantial part of the move may be missed. </p>
+            
+            <p><a href="technical_analysis.html">Category</a>
+                <br/>
+                <a href="trend_lines.html">Previous Page</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

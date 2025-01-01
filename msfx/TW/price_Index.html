@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '關於我們',  link: 'about_us.html',
+        children:  [
+          { legend: '我們的優勢', link: 'us_advantage.html'},
+          { legend: '全球未來的發展', link: 'global_future.html'},
+          { legend: '我們的成員', link: 'team.html'},
+          { legend: '合作夥伴', link: 'partner.html'},
+          { legend: '網站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理財項目',
+        children:  [
+           { legend: '外匯產品', link: 'fx_product.html'},
+          { legend: '與MS交易比特幣', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培訓',
+        children:  [
+          { legend: '新手入門', link: 'gettingstarted.html'},
+          { legend: '外匯市場特點', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差價合約', link: 'cfds.html'},
+          { legend: '基本知識', link: 'basics.html'},
+          { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技術分析', link: 'technical_analysis.html'},
+          { legend: '常用術語', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>通脹及消費物價指數</h2>
+          
+          <p>消費物價指數是最廣為使用的通脹量度工具，有時候會被視為政府經濟政策成效的指標。這提供了國家經濟的價格改變對政府、商業、勞工及私人公民所造成的影響。他們會運用它來作為作出經濟決定的指南。此外，總統、國會及聯儲局以消費物價指數的趨勢來協助制定財政及貨幣政策。</p>
+            
+            <p>消費物價指數指城市消費者就"市場一籃子"消費者貨品及服務所支付的價格於一段時間的平均變動。一籃子消費物價指數是家庭和個別人士實際購買什麼貨品的詳細開支資料。美國大部份特定消費物價指數都以1982-84作為參考基礎。勞工統計局(BLS)將涵蓋1982、1983及1984的一段36個月期間定為平均指數水準(代表平均價格水準) – 相等於100。其後，勞工統計局將會量度該數字的轉變。例如，指數為110，表示自參考期開始價格上升了10%；同樣地，指數為90表示價格下跌了 10%。就目前的消費物價指數而言，此資料是收集自2005年及2006年消費者開支調查。這並不是個別家庭的實際開支紀錄，但卻可以讓人瞭解到價格上升如何影響一般家庭的開支，及因為通脹而導致一美元的"購買力"所出現的轉變。</p>
+            
+            <p>消費物價指數是由參考人口購買以作消耗的所有貨品及服務所組成。主要組別及各個類別的例子如下：<br/>
+				<span class="bullet">&#8226 </span> 食物及飲品(穀物早餐、牛奶、咖啡、雞、酒、全套服務的用餐、零食)
+                <br/>
+                <span class="bullet">&#8226 </span> 房屋(主要居住地租金、擁有人的等值租金、燃油、睡房家私)
+                <br/>
+				<span class="bullet">&#8226 </span> 衣飾(男裝恤衫、襯衫、女裝裙子、珠寶)
+                <br/>
+                <span class="bullet">&#8226 </span> 交通(新車、機票費用、氣油、汽車保險)
+                <br/>
+				<span class="bullet">&#8226 </span> 醫療(署方藥物及醫療物品、醫生診療服務、眼鏡及眼睛護理、住院服務)
+                <br/>
+                <span class="bullet">&#8226 </span> 娛樂(電視、玩具、寵物及寵物產品、運動設備、入場費)
+                <br/>
+				<span class="bullet">&#8226 </span> 教育及通訊(大學學費、郵政費用、電話服務、電腦軟體及配件)
+                <br/>
+                <span class="bullet">&#8226 </span> 其他貨品及服務(煙草及煙草產品、理髮及其他個人服務、殯儀開支)                              
+            </p>
+            
+            <p>藉比較指數數位而顯示的每月或每年轉變通常會以百分比表達 – 例如，"消費價格自上月起上升了0.3%"。</p>
+            
+            <p>此百分比轉變往往稱為通脹率 – 例如"過去12個月的通脹率是2.5%"。</p>
+            
+            <p>不少投資者及聯儲局都會經常監察此數位，以瞭解未來的利率。利率舉足輕重，原因是它除了對一個國家的資金流入金額有直接影響外，亦能夠解釋以美元計值的套息交易的情況。若通脹數位高過預期，交易者將會把它詮釋為短期內很可能會加息，及因此買入貨幣，而當該數字較預期為低時，則可能會導致交易者持觀望態度，直至中央銀行實際作出決定為止。基本上，在消費物價指數出現負轉變時進行交易，較在消費物價指數出現正轉變時進行交易困難，因為這個情況下會有不同詮釋的緣故。消費物價指數大幅上升將會導致市場更為暢旺，但消費物價指數下跌卻未必會導致市場變得淡靜。消費物價指數量度零售層面的脹通(消費者)，而生產商物價指數則量度批發層面的通脹(生產商)</p>
+            
+            <p>於美國，消費物價數字每季公佈一次。數字公佈時(約於每個月的月中)，它們反映出上月的資料。歐洲、英國、加拿大及日本每個月亦會公佈消費物價指數。不少其他國家只會每季公佈此資料。</p>
+            
+            <p>當您繼續學習基本分析時，各個範疇之間的相互關係便變得越加明顯。當您研習其他課堂時請緊記這一點，那樣您將會有一個完整的概念。</p>
+            
+            <p><a href="basic_analysis.html">回目錄</a>
+                <br/>
+                <a href="interest_rate.html">上一篇</a>
+                <a href="non_farm_data.html">下一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

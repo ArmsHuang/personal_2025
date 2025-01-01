@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">              <page-header :menus="{
+      spLinks: [
+        { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+        { legend: 'CONTACT US', link: 'content_us.html' }
+      ],
+      language: {
+        legend: 'LANGUAGE',
+        nodes: [          { legend: 'ENGLISH', link: 'index.html' },
+          { legend: '简体中文', link: 'CN/index.html' },
+          { legend: '繁体中文', link: 'TW/index.html' }
+        ]
+      },
+      boxGroups: [
+        {	
+          legend: 'ABOUT US',  link: 'about_us.html',
+          nodes: [
+            { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+            { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+            { legend: 'OUR GROUPS', link: 'team.html' },
+            { legend: 'PARTNERSHIP', link: 'partner.html' },
+            { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+          ]
+        },
+        {
+          legend: 'FINANCE PROJECT',
+          nodes: [
+            { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+            { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+            { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+          ]
+        },
+        {
+          legend: 'EDUCATION',
+          nodes: [
+            { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+            { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+            { legend: 'AN STP BROKER', link: 'stp.html' },
+            { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+            { legend: 'TRADING BASICS', link: 'basics.html' },
+            { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+            { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+            { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+            { legend: 'GLOSSARY', link: 'terms.html' },
+
+          ]
+        }
+      ]
+    }" :menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+<div class="content-wrap">
+      
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+    [
+      {
+         legend: 'ABOUT US',  link: 'about_us.html',
+          children:  [
+            { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+            { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+            { legend: 'OUR GROUPS', link: 'team.html' },
+            { legend: 'PARTNERSHIP', link: 'partner.html' },
+            { legend: 'STABILITY AND SECURITY', link: 'security.html' },        
+        ]
+      },
+      {
+         legend: 'FINANCE PROJECT',
+          children:  [
+            { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+            { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+            { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+        ]
+      },
+      	{
+          legend: 'EDUCATION',
+          children:  [
+            { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+            { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+            { legend: 'AN STP BROKER', link: 'stp.html' },
+            { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+            { legend: 'TRADING BASICS', link: 'basics.html' },
+            { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+            { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+            { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+            { legend: 'GLOSSARY', link: 'terms.html' },
+        ]
+      },
+    ]">
+    </content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>支持及阻力</h2>
+          
+          <p>支援位及阻力位是技術分析中最重要的專案。現在就看看圖表吧。</p>
+            <br/>
+            	<p class="margin_auto">
+                	<img  src="images/support_resistance_01.jpg" alt="">
+                </p>
+            
+            
+            <p>正如您從上圖可見，支持位是貨幣對難以跌穿的價格水準，而阻力位則是貨幣對難以升穿的價格水準。試想像支持位及阻力位之間是一個房間。支持位是地板，而阻力位是天花板。貨幣對將會在這兩個水準之間移動，直至其中一個方向出現"突破"為止。</p>
+            
+            <p>理論上，支持位是需求(購買力)強得足以阻止價格進一步下跌的價格水準。當中的理據是隨著價格逐步接近支持位及在過程中變得越來越便宜，買家將會認為這是較划算的交易和更有可能買入。而由於交易變得越來越不划算，賣方便變得較不可能賣出。在該情景下，需求(買家)將會力壓供應(賣家)，而這將會阻止價格跌破支持位。</p>
+            
+            <p>能會想，支持位未必經常都守得住。當價格跌破支援位元後，顯示賣家在與買家的角力之中勝出。跌破支援位元顯示現在的交易心態是傾向賣多於買。於跌破支援位元後，交易者可以預期在買家建立持倉的另一個點將會出現另一個支持位。</p>
+            
+            <p>另一方面，阻力位是供應(沽售力)強得足以阻止價格進一步上升的價格水準。背後的理據是隨著價格逐步接近阻力位及在過程中變得越來越昂貴，賣家更有可能會賣出，而買家則不大可能會買入。在該情景下，供應(賣家)將會力壓需求(買家)，而這將會阻止價格升穿阻力位。</p>
+            
+            <p>就像支持位一樣，阻力位未必經常能守得住，升穿阻力位元顯示看好者(買家)力壓看淡者(賣家)。由於阻力位已升穿，買家現在有更大意欲在更高的價格買入，因為價格繼續向上移動，而且看似不大可能會回落。一旦升穿之前的阻力位，在賣家建立倉位的水準將會形成一個新的阻力位。</p>
+            
+            <p>作為一項一般性原則，圖表的時間段越長，已建立的支持位及阻力位將會變得更強。換句話說，日圖所反映的支持位及阻力位將會較1小時圖的支持位及阻力位更強。</p>
+            <p>就讓我與您分享一個存在已久的支持位/阻力位原理。當跌破支持位後，該水準便會成為一個新阻力位。當阻力位升穿後，便會成為一個新支持位。現在回到先前所舉的房間比喻。假設您處身於一幢兩層高的樓房，而您跌穿地板掉到下一層。一直支持您的地板現在已變成您頭頂上的天花板 … 而原本的支持位(前一個地板)便變成新阻力位(新天花板)。相反，若您跳高至穿越房間的天花板，您將會站在前一個天花板，亦即現在的新地板。</p>
+            
+            <p>現在看看圖表中這一個概念。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/support_resistance_02.jpg" alt="">
+                </p>
+            
+            <p>從上圖可見，當貨幣對的買賣價向下走時，原來的支持線就會失守，然後成為目前的新阻力位。當升穿圖表的阻力位元時，便會成為新支持位。</p>
+            
+            <p>從下圖可見，透過尋找圖表的"擠塞"部份，可以識別出支援位及阻力位 … 該處是買家與賣家角力爭奪控制權的部份。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/support_resistance_03.jpg" alt="">
+                </p>
+            
+            <p>此外，交易者可以連結最近的最低支持位及最近的最高阻力位以建立該些水準。</p>
+			
+            <p class="margin_auto">
+                	<img  src="images/support_resistance_04.jpg" alt="">
+            </p>
+            
+            <p>在升勢中，一旦建立趨勢線，當買賣價向下迫近支持位及受支持位所影響以致燭身的收市價不會低於該支持位時，即可建立新長倉。</p>
+            
+            <p>理想地來說，若趨勢線要視為有效，價格行為需要線上上顯示出三個"觸點"。在該三個觸點出現前，還未有足夠證據表示該趨勢線就是真正的趨勢線。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/support_resistance_05.jpg" alt="">
+            </p>
+                
+            <p>在跌勢中，一旦趨勢線已建立，每當價格迫近趨勢線的阻力位，而燭身的收市價並沒有高過該線時，便可建立短倉。</p>
+            
+            <p>採用區間交易策略時，支援位元及阻力位十分重要。下圖中，我們可以看到此澳元/日元貨幣對如何持續在已建立的支持及阻力水準之間進行交易。從事區間交易之交易者將會在支援位買入及在阻力位賣出。交易者可在突破出現前重複採取這個策略。</p>
+            
+            <p class="margin_auto">
+                	<img  src="images/support_resistance_06.jpg" alt="">
+                </p>
+            
+            <p>重要的是，交易者必須能夠識別出主要支持位及阻力位，以成功地練習技術分析。由於詮釋圖表並非完全科學化，要建立準確的水準可說十分困難，單單注意到存在這些水準及它們在圖表上的大概位置，已可增進交易者的分析技巧。</p>
+            
+            <p>總括而言，若貨幣對的收市價處於重要的支持位元，便提示了交易者應注意買入壓力及潛在轉勢的跡象。另一方面，若貨幣對正朝重要阻力位邁進，便提示了交易者應注意沽售壓力及潛在轉勢的跡象。</p>
+            
+            <p>若突破支援位或阻力位，那將是供應(賣家)及需求(買家)之間關係轉變的跡象。若跌破支持位，賣家現正處於上風，而若升穿阻力位，則買家現正掌握控制權。</p>
+
+            <p><a href="technical_analysis.html">回目錄</a>
+                <br/>
+                <a href="multiple_time.html">上一篇</a>
+                <a href="loss_limit.html">下一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>       <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup, p in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes" @opened="getOnopened" :setter="nowBoxGroup"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group @opened="getOnopened" :setter="nowBoxGroup" :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="`lang`"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link"  :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li :style="{ 'transition-delay': delay(i)}"><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

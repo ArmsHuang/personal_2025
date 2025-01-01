@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+     { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+     { legend: 'CONTACT US', link: 'content_us.html' }
+   ],
+   language: {
+     legend: 'LANGUAGE',
+     nodes: [
+       { legend: 'ENGLISH', link: 'index.html' },
+       { legend: '简体中文', link: 'CN/index.html' },
+       { legend: '繁体中文', link: 'TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: 'ABOUT US',  link: 'about_us.html',
+       nodes: [
+         { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+         { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+         { legend: 'OUR GROUPS', link: 'team.html' },
+         { legend: 'PARTNERSHIP', link: 'partner.html' },
+         { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+       ]
+     },
+     {
+       legend: 'FINANCE PROJECT',
+       nodes: [
+         { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+         { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+         { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: 'EDUCATION',
+       nodes: [
+         { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+         { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+         { legend: 'AN STP BROKER', link: 'stp.html' },
+         { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+         { legend: 'TRADING BASICS', link: 'basics.html' },
+         { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+         { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+         { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+         { legend: 'GLOSSARY', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: 'ABOUT US',  link: 'about_us.html',
+        children:  [
+          { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+          { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+          { legend: 'OUR GROUPS', link: 'team.html' },
+          { legend: 'PARTNERSHIP', link: 'partner.html' },
+          { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+      ]
+    },
+    {
+       legend: 'FINANCE PROJECT',
+        children:  [
+          { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+          { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+          { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+      ]
+    },
+      {
+        legend: 'EDUCATION',
+        children:  [
+          { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+          { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+          { legend: 'AN STP BROKER', link: 'stp.html' },
+          { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+          { legend: 'TRADING BASICS', link: 'basics.html' },
+          { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+          { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+          { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+          { legend: 'GLOSSARY', link: 'terms.html' },
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>Trend Lines</h2>
+          
+          <p>The basic trend line is one of the simplest of the technical tools employed by the chartist, but by any standard the most powerful and valuable tool in trading. The trend line is constructed when there are three higher or lower points to be connected. This forms a channel which the price action can be monitored.</p>
+            
+            
+            <p>As discussed, one of the obvious presumptions derived from chart studies is that prices have a prevailing tendency to move in a particular direction. This trend frequently assumes a definition pattern which evolves along a straight line. This ability of prices to adhere extremely close to an imaginary straight line is one of the most extraordinary characteristics of chart movements.</p>
+            
+            <p><strong>Drawing a Trend line</strong><br/>The correct drawing of trend lines is an art like every other aspect of charting and some experimenting with different lines is usually necessary to find the right one. Sometimes a trend line which appears to be correct may have to be redrawn. With practice, the art of drawing trend lines becomes easier, but initially there are some useful guidelines in the search for the correct one.</p>
+            
+            <p>There must be evidence of a trend. This means that, for an up trend line to be drawn there must be at least two reaction lows with the second low higher than the first. Once two ascending lows have been identified, a straight line is drawn connecting the lows and projected up and to the right.</p>
+            
+            <p>Once the third point has been confirmed and the trend proceeds in its original direction, the trend line becomes very useful in a variety of ways. One of the basic concepts of technical analysis is that a trend in motion will tend to stay in motion. Therefore, once a trend assumes a particular slope or a rate of speed, as identified by the trend line, then it usually maintains the same slope. The trend line then helps not only to determine the extremities of the corrective phases but also importantly, when that trend is changing. Very often the breaking of the trend line is one of the best early warnings of a change in trend.
+            </p>
+
+            <p><strong>The Significance of the Trend line</strong></p>
+            
+            <p>It is very important to discuss how to determine the significance of a trend line. In every market and on every chart you see there are many trends in motions, short term, mid term, long terms, hourly and so on. However, not all these trends will be significantly strong. If they are not, a trader runs the risk of entering or exiting the market at the wrong time. The more significant a trend line, the more confidence it inspires and the more important its penetration. There are two factors that determine the significance of a trend line. Firstly, the length of time it has been intact, and secondly how many times it has been tested. A trend line that the market has tested 8 times for example, but keeps pushing the price away, is obviously a more significant trend line than one that has only been tested twice. As a rough estimate after the third bounce off the trend line will be when the market will start to offer trading signals. Similarly, a trend line that has been intact for the last 9 months is of more importance than one that has been intact for 9 weeks. There is no standard as to what duration one needs to wait before relying on the trend, as some trends will only stay in motion for short periods of time. To catch these, you have to use the time in conjunction with the testing of the line.</p>
+            
+            <p><strong>Support and Resistance</strong><br/>Support and resistance levels are ones of the most basic but essential components of technical analysis. Support and resistance are price areas where an abundance of trading has taken place and where considerable buying or selling pressure exists. Underlying support (buying pressure) keeps a market in an uptrend, and overhead resistance (selling pressure) keeps a market trending lower. Once a trader can accurately determine where these levels are, they can be used very effectively to manage risk, and identify profit opportunities. By entering trades at price levels at which a significant move is likely, the probability or reward over risk is improved. There are support and resistance levels that are applicable to every traders time frame. Observing how the market reacts when encountering these levels is a very good barometer to measure the strength of the underlying trend. They are also key points for breakout moves. Large quantities of stop loss orders will usually accumulate at key support and resistance areas and will often contribute to a dramatic surge in the market in the direction of the breakout once these areas have been penetrated.</p>
+            
+            <p><strong>Support Levels</strong><br/>A support level is a price area at which there should be an increase in the demand for that product. A support area is not difficult to find in a chart. When the market is in an uptrend, any previously established congestion area is the uptrend is usually an area of support. To draw a support line you need to find at least 2 points on the chart that adhere to this criteria. This then forms a line that can be extended across the chart.</p>
+            
+            <p>When a support area is penetrated on the downside, it then may become the nearest resistance area to a subsequent advance.</p>
+            
+            <p><strong>Resistance Levels</strong><br/>A resistance level is a price area characterised by increased selling pressure or increased supply of a particular investment product which tends to level off advances. If the market is in an uptrend, any point at which new highs are reached or any congestion on the upside will act as resistance. To draw a resistance line you need to find at least 2 points on the chart which adhere to this criterion. This then forms a line which can be extended across the chart.</p>
+            
+            <p>When a resistance area is penetrated on the upside, it may become then the nearest support area to any subsequent decline.</p>
+            
+            <p><a href="technical_analysis.html">Category</a>
+                <br/>
+                <a href="multiple_time.html">Previous Page</a>
+                <a href="moving_average.html">Next Page</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

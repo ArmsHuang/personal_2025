@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '会员登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx', bgPad: true },
+        { legend: '联繫我们', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '语言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: 'index.html' },
+          { legend: '繁体中文', link: '../TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '关于我们',  link: 'about_us.html',
+       nodes: [
+            { legend: '我们的优势', link: 'us_advantage.html' },
+            { legend: '全球未来发展', link: 'global_future.html' },
+            { legend: '我们的成员', link: 'team.html' },
+            { legend: '合作伙伴', link: 'partner.html' },
+            { legend: '网站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理财项目',
+       nodes: [
+             { legend: '外汇产品', link: 'fx_product.html' },
+            { legend: '与MS交易比特币', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培训',
+       nodes: [
+             { legend: '新手入门', link: 'gettingstarted.html' },
+            { legend: '外汇市场特点', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差价合约', link: 'cfds.html' },
+            { legend: '基本知识', link: 'basics.html' },
+            { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技术分析', link: 'technical_analysis.html' },
+            { legend: '常用术语', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '关于我们',  link: 'about_us.html',
+        children:  [
+          { legend: '我们的优势', link: 'us_advantage.html'},
+          { legend: '全球未来的发展', link: 'global_future.html'},
+          { legend: '我们的成员', link: 'team.html'},
+          { legend: '合作伙伴', link: 'partner.html'},
+          { legend: '网站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理财项目',
+        children:  [
+           { legend: '外汇产品', link: 'fx_product.html'},
+          { legend: '与MS交易比特币', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培训',
+        children:  [
+          { legend: '新手入门', link: 'gettingstarted.html'},
+          { legend: '外汇市场特点', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差价合约', link: 'cfds.html'},
+          { legend: '基本知识', link: 'basics.html'},
+          { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技术分析', link: 'technical_analysis.html'},
+          { legend: '常用术语', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+         <h2>基本知识</h2>
+          <p><span class="strong">报价惯例</span><br/>外汇市场的报价可能会令人感到溷淆，因为您在市场建立的任何一个持仓实际上是两个不同的持仓。
+          <br/>
+			就外汇来说，货币将会以一对对的方式列出。外汇为您提供较其他市场更多的选择。举例说，您可能看好欧元，因此希望买入欧元。就外汇
+            而言，您可以选择以何种货币买入欧元。您可以用美元买入欧元，又或用日元买入，适随尊便。您可以用我们所提供的一系列其他货币买入欧元。
+          </p>
+          
+          <p>因此，货币对将会以下列方式显示。</p>
+          
+          <p><span class="strong">欧元/美元</span></p>
+          
+          <p>第一隻列出的货币称为"基础货币"，而第二隻列出的货币则称为"相对货币"或"报价货币"。因此，就欧元/美元而言，欧元是基础货币，而美元则是相对货币。若此货币对的汇价是1.4700，这个报价显示买入一个单位的基础货币需要多少相对货币。故此，买入一欧元需要1.47美元。</p>
+          
+          <p>建立交易时，请紧记当您在任何时候建立持仓，您正建立基础货币的持仓。因此，若您买入一个货币对，您正买入基础货币。若您卖出一个货币对，您正卖出基础货币。所以，您很容易便能够记住，相对货币所做的恰好相反。若您买入欧元/美元，您正买入欧元及卖出美元。</p>
+          
+          <p>若您仍然感到十分困惑，可简单地以这个方式去想。若您认为汇率将会攀升就买入；若您认为汇率将会走下坡则卖出。就是这样简单。</p>
+          
+          <p>您经常会看到两边的报价——买入价及卖出价。买入价是您可以买入该货币对的价位，而卖出价是您可以卖出该货币对的价位。两个价格之差称为"买卖差价"。买卖差价由价格提供者及那一刻的市场流通量厘定。</p>
+          
+          <p>所有可买卖工具、股票、债券、期货、期权等都存在买卖差价，只是交易者未必能时常察觉得到。
+          <br/>
+			综上所述，相信您已有所瞭解货币对是如何报价以及当您建立交易时，您正买入及卖出的是什麽货币。
+          </p>
+          
+          <p><b>点</b><br/>"点"指以百分率计算的一点。简单来说，在外汇世界中，一点即计算盈利及亏损的"点"。就标准(10k)帐户而言，每点约相等于一个单位的帐户结算货币。举例说，若您的帐户以美元作为结算单位，每一点(视乎货币对而定)约相等于1美元。就微型帐户而言，每点的金额约相等于标准帐户的十分之一——即约为0.10美元。</p>
+          
+          <p>就涉及日元(JPY)的所有货币对而言，一点为百分之一——即小数点后第2个位。就所有其他货币对而言，一点为万分之一——即小数点后第4个位。</p>
+          
+          <p>至于如何计算每点价值，以下是一条简单的公式。</p>
+          
+          <p>首先从您的交易单位入手。微型交易合约为1k，因此，若您希望使用微型交易合约的点值，请使用1,000。若您希望使用标准手的点值，请使用10,000。之后，您将交易单位乘以所买卖的货币对的一 点。
+部份人对此可能会茫无头绪，那麽我们就举例说明吧。<br/>在以下例子中，我们将会计算一手10k的欧元/美元的点值。</p>
+
+		 <p>由于我所用的是标准10k交易单位，一开始我会用10,000。将10,000乘以".0001"，因为所有货币对的 点都是10,000分之一(日元货币对除外)。</p>
+         
+         <p>得出的数值是1。这个数字将会以我所买卖的货币对中的"相对货币"(第二货币)来计值。在本例中，我所买卖的是欧元/美元，所以美元是货币对中的相对货币。就一手10k的欧元/美元而言，一点的价值为1美元。</p>
+         
+         <p>若我的帐户以美元作为结算货币，每当欧元/美元随市场变动1点，我的帐户将会产生1美元的盈利或亏损。</p>
+         
+         <p><b>杠杆及保证金</b><br/>
+         杠杆及保证金是一个您需要明白的重要概念，因为若使用不当，杠杆可能很快便会为您招致麻烦。若运用得宜，杠杆可增加您的交易策略的盈利能力。<br/>"杠杆"及"保证金"所指的是同一个概念，只是观点稍为有所不同而已。当交易者建立持仓时，他们需要"真诚地"交出持仓价值一部份的金额。在这个情况下，交易者可以说是"已使用杠杆"。需要交出的金额则称为"保证金要求"。保证金要求往往亦称为"信用保证金"，因为交易者一般可在平掉持仓后取回该金额。我在这里表示"一般"，是因为若出现追加保证金的话，情况便会截然不同，有关情况将会在稍后详加说明。</p>
+         
+         <p>为清楚起见：保证金存款是交易的要求，而非交易的成本。</p>
+         
+         <p>外汇市场的一大好处是它就任何可买卖金融工具提供了部份最低的保证金要求。这表示您的帐户的购买力远高于规模相同的股票交易帐户或债券交易帐户。</p>
+         
+         <p>现在就研究一个杠杆及保证金的例子吧。</p>
+         
+         <p>假设交易者建立一手10k美元／日元货币对的持仓。交易者无需交出10,000美元，他们只需要交出50美元或100美元。(实际的金额是多少，将取决于帐户所设定的水准。)模拟帐户的预设杠杆是200:1，因此一个10k持仓的保证金要求只是50美元(10,000的0.5%)。若交易者建立两手10k的单子，他们的总持仓将会是20,000，而现在的保证金要求就是100美元。</p>
+         
+         <p>值得注意的一点是，保证金要求并非持仓可能亏损的最高限额。这只是经纪商要求您交出用以建立持仓的金额。您需要时刻紧记持仓的实际大小，因为盈亏将会以持仓的规模为基础计算，而非所需保证金的金额。</p>
+         
+         <p>下表提供其他例子:</p>
+         
+         <table class="dc">
+         	<tbody>
+            	<tr style="background-color:#00b0cf; color:#fff;">
+                	<td>所需保证金</td>
+                    <td>持仓单位 - 名义价值</td>
+                    <td>杠杆</td>
+                    <td>保证金 %</td>
+                </tr>
+                <tr>
+                	<td>$50</td>
+                    <td>$10,000</td>
+                    <td>200:1</td>
+                    <td>0.5%</td>
+                </tr>
+                <tr>
+                	<td>$100</td>
+                    <td>$10,000</td>
+                    <td>100:1</td>
+                    <td>1%</td>
+                </tr>
+                <tr>
+                	<td>$200</td>
+                    <td>$10,000</td>
+                    <td>50:1</td>
+                    <td>2%</td>
+                </tr>                                
+            </tbody>
+         </table>
+         <br/>
+         <p>交易者必需时常紧记，杠杆是一把双刃剑：当持仓向有利于您的方向移动时，高度杠杆可以扩大盈利，而当持仓向不利于您的方向移动时，则将扩大亏损。</p>
+         <p>基于这个原因，切勿使过多的帐户价值承受风险及/或建立相对于帐户规模来说过多的持仓，以致您的帐户过度杠杆化。</p>
+         <p>至于何谓过多，则因个别交易者而异。短线交易者一般都惯于使用较大的杠杆，因为他们知道持有仓位的时间不长。较为长线的交易者所用的杠杆较低，这样一来轻微的波幅并不会导致他们的持仓被平掉。我们建议您在类比帐户内就不同的交易策略试用不同的杠杆，从而找出最适合您的交易模式。请紧记，可使用大量杠杆并不表示您应时常使用高杠杆。</p>
+         
+         <p><b>过夜利息</b><br/>我们将会在这一节讨论过夜利息。我们会先说明过夜利息的概念，然后再看一个计算过夜利息的例子。我们将会向您示范如何利用过夜利息，因为不少成功的交易者都会将它视为交易策略的重要一环。</p>
+         <p>过夜利息是持仓过夜所支付或赚取的利息。每只货币相关的目标利率(一般由该货币的中央银行所厘定)。请参阅以下列子：</p>
+         
+         <p class="tc"><img src="images/rollover_1_chg_tc.jpg" alt=""></p>
+         <br>
+         
+         <p>正如我们在查看外汇报价中曾提及，每当您建立外汇持仓时，您正买入某一货币及卖出另一货币。因此，您将会赚取您所买入的货币的利率，及支付所卖出的货币的利率。淨差额将会作为过夜利息每日(GMT时间0时)存入您的帐户或从中扣除。值得注意的是，过夜利息只适用于在GMT时间0时持有的开仓部位。若您在过夜利息时间之前平掉持仓，或在过夜利息时间之后才建立持仓，将不会获支付或扣除任何利息。</p>
+         <p>值得注意的一点是星期三的过夜利息。这可能会令人感到溷乱，所以若您未能正确掌握亦无需感到忧虑。</p>
+         <p>一般来说，外汇是一个两日交付的市场。这表示持仓将会在建立后两日才会交收。在星期三，持仓将会转仓为星期四的持仓。技术上来说，这些持仓将会在星期六交收。银行在星期六休息，因此，持仓将会经过週末转仓至星期一。简言之，星期三的过夜利息一般相等于三日的利息。过夜利息不适用于在星期六及星期日持有的开仓部位。<br/>希望现在您已比较清楚如何利用过夜利息。</p>
+         
+         <p><b>外汇市场时间</b><br/>由于外汇交易在全球各地进行，因此市场每日24小时开放。交易者必需知道主要市场的活跃交易时间，及如何根据这些时间进行交易。<br/>作为一项一般性原则，某一特定货币通常会在该特定市场开市时最为活跃。以英镑及其相关货币对为例，虽然它们每日24小时都非常活跃及可供买卖，但却倾向在伦敦市场的交易时段最为活跃及广泛受到买卖。与此同时，日元及其相关货币对在东京营业日会广泛受到买卖。</p>
+         
+         <p>主要外汇市场的交易时间如下：
+         <br/>
+         伦敦－美东时间凌晨3时至中午12时 (占总外汇交易量 ~35%)
+         <br/>
+         纽约－美东时间早上8时至下午5时 (占总外汇交易量 ~20%)
+         <br/>
+         悉尼－美东时间下午5时至凌晨2时 (占总外汇交易量 ~4%)
+         <br/>
+         东京－美东时间下午7时至凌晨4时 (占总外汇交易量 ~6%)
+         </p>
+         
+         <p>您可以透过多个方式运用上述资料。在某一时间所执行的交易越多(假设一切维持不变)，买卖差价将会越小。更大的流通量将会造成更小的买卖差价。<br/>因此，我们可以看到于美东时间上午8时至上午11时，两大市场(伦敦及纽约)会重叠约3小时。这对不少交易者来说是一个主要交易时段。请紧记，每一个交易日都各有不同，故无法保证此时段会定期产生可观的交易量。然而，当伦敦及纽约市场同时开放及交易时，往往会产生更多交易机遇。</p>
+         
+         <p>儘管东京及悉尼市场的交易时间有所重叠，但由于整体交易量大幅低于前者，因此其重要性不及伦敦及纽约的重叠时段。</p>
+         
+         <p><b>週末交易</b><br/>
+         虽然外汇市场在技术上来说永远不会收市，但实际上所有主要银行及交易实体都会在週末休息。週末的交易量极小，以致倾向未能为交易者提供什麽交易机遇。儘管部份活动会视乎週末可能发生的一些基本面消息而出现，一般来说，货币对的变动都微不足道，交易流通量极为稀疏，以致难以执行交易及买卖差价相当之大。</p>
+         <p>由于交易者各有不同，因此部份交易者会在週末维持开仓部份，而另一些则会在美东时间星期五下午4时之前将所有开仓部位平仓。<br/>现在，您应该已经有所需的资料去明白外汇市场的交易时间。</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保护客户资料声明</a><a class="footer__nav__node" href="high_risk_warning.html">风险警告</a><a class="footer__nav__node" href="execution_policy.html">交易执行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>电话:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+     { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+     { legend: 'CONTACT US', link: 'content_us.html' }
+   ],
+   language: {
+     legend: 'LANGUAGE',
+     nodes: [
+       { legend: 'ENGLISH', link: 'index.html' },
+       { legend: '简体中文', link: 'CN/index.html' },
+       { legend: '繁体中文', link: 'TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: 'ABOUT US',  link: 'about_us.html',
+       nodes: [
+         { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+         { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+         { legend: 'OUR GROUPS', link: 'team.html' },
+         { legend: 'PARTNERSHIP', link: 'partner.html' },
+         { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+       ]
+     },
+     {
+       legend: 'FINANCE PROJECT',
+       nodes: [
+         { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+         { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+         { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: 'EDUCATION',
+       nodes: [
+         { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+         { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+         { legend: 'AN STP BROKER', link: 'stp.html' },
+         { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+         { legend: 'TRADING BASICS', link: 'basics.html' },
+         { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+         { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+         { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+         { legend: 'GLOSSARY', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: 'ABOUT US',  link: 'about_us.html',
+        children:  [
+          { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+          { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+          { legend: 'OUR GROUPS', link: 'team.html' },
+          { legend: 'PARTNERSHIP', link: 'partner.html' },
+          { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+      ]
+    },
+    {
+       legend: 'FINANCE PROJECT',
+        children:  [
+          { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+          { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+          { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+      ]
+    },
+      {
+        legend: 'EDUCATION',
+        children:  [
+          { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+          { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+          { legend: 'AN STP BROKER', link: 'stp.html' },
+          { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+          { legend: 'TRADING BASICS', link: 'basics.html' },
+          { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+          { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+          { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+          { legend: 'GLOSSARY', link: 'terms.html' },
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>OUR FOREX PRODUCTS</h2><img src="images/fx_product_mobile.jpg">
+          <h4>1.Introduction</h4>
+          <p><span class="strong">Highest liquidation</span><br/>The trading volume in Foreign Exchange Market is over 5 trillion dollars on average per day. It can be called as the market with the highest liquidation in the world. So, traders can come and go in any market situation. There are almost no obstacles or risks on implementation and no limits of daily trading volume, either.</p>
+          
+          <p><span class="strong">24-hour trading</span><br>One of the biggest advantages in foreign exchange trading is that it can be carried out for 24 hours every day, which enables the investors make response to and take advantages of the market fluctuations at any time.</p>
+          
+          <p><span class="strong">No one can corner the market</span><br/>Because of the hugeness of the foreign exchange market and the large amount of participants involved in, no single entity can control the market price for long. Central Bank is no exception. And even the powerful interference of Central Bank has also become more and more invalid; besides, the length of time for the influence it puts on the market has become shorter and shorter, too. So, the Central Bank becomes more and more unwilling to control the market price.</p>
+          
+          <p><span class="strong">Always a bull market</span><br/>Foreign exchange market uses one kind of currency to buy and sell another kind of currency. So the bull or bear markets are determined by the relative value of this currency when compared with other currencies. If this currency has a promising prospect, then the traders will gain benefits by buying this currency with other currencies, thus come up the bull market; on the contrary, if the currency has a negative prospect, then the other currencies will become the bull market and the traders can gain benefits by selling this currency. Anyway, traders always have a certain bull chance of trading.</p>
+          
+          <h4>2.Calculations of Profit/Loss</h4>
+          <p><span class="strong">Calculations of Profit/Loss</span><br/>((1) Profit/Losses of Valuation Currency USDJPY, USDCHF and USDCAD (Selling price - buying price)*contract value*amount of contracts/closing price = profits/losses valuated by USD<br/>(2) Profits/Losses Valuated by USD EURUSD, GBPUSD and AUDUSD (Selling price - buying price)*contract value*amount of contracts = profits/losses valuated by USD</p>
+          
+          <p><span class="strong">*The above way of calculation does not include the commission fees.</span><br/><span class="strong">*The above terms and conditions will be adjusted to the market. Please refer to the announcement given out by our company or contact us for the latest information</span></p>
+          
+          <h4>3.An Example of Foreign Exchange Trade</h4>
+          <p>GBPUSD rises from 1.5530 to 1.5630<br/>If a customer with standard account carries out the following trade:</p>
+          
+          <div class="table_content">
+          	<table>
+              <tbody>
+                <tr>
+                  <td class="td_head">Leveraged Trading</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Opening Price:1.5530</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Trade Size: 100,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Cost of Investment: 1,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Close Price: 1.5630</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Points of Profits:1.5630-1.5530=0.01000=100 pips</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Value for 1 point: $10</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Net Profit/Net Loss:1,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">ROI:1,000/1,000*100%=100%</td>
+                </tr>
+              </tbody>
+		</table>
+
+        <table>
+              <tbody>
+                <tr>
+                  <td class="td_head">traditional Trading with No Leverage</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Opening Price:1.5530</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Trade Size: 100,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Cost of Investment: 100,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Close Price: 1.5630</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Points of Profits:1.5630-1.5530=0.0100=100 pips</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Value for 1 point: $10</td>
+                </tr>
+                <tr>
+                  <td class="td_content">Net Profit/Net Loss:1,000</td>
+                </tr>
+                <tr>
+                  <td class="td_content">ROI:1,000/100,000*100%=1%</td>
+                </tr>
+              </tbody>
+		</table>
+          </div>
+          <p><span class="strong">*The above calculations do not include commission and rate of fees.</span></p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+     { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+     { legend: 'CONTACT US', link: 'content_us.html' }
+   ],
+   language: {
+     legend: 'LANGUAGE',
+     nodes: [
+       { legend: 'ENGLISH', link: 'index.html' },
+       { legend: '简体中文', link: 'CN/index.html' },
+       { legend: '繁体中文', link: 'TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: 'ABOUT US',  link: 'about_us.html',
+       nodes: [
+         { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+         { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+         { legend: 'OUR GROUPS', link: 'team.html' },
+         { legend: 'PARTNERSHIP', link: 'partner.html' },
+         { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+       ]
+     },
+     {
+       legend: 'FINANCE PROJECT',
+       nodes: [
+         { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+         { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+         { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: 'EDUCATION',
+       nodes: [
+         { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+         { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+         { legend: 'AN STP BROKER', link: 'stp.html' },
+         { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+         { legend: 'TRADING BASICS', link: 'basics.html' },
+         { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+         { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+         { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+         { legend: 'GLOSSARY', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: 'ABOUT US',  link: 'about_us.html',
+        children:  [
+          { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+          { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+          { legend: 'OUR GROUPS', link: 'team.html' },
+          { legend: 'PARTNERSHIP', link: 'partner.html' },
+          { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+      ]
+    },
+    {
+       legend: 'FINANCE PROJECT',
+        children:  [
+          { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+          { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+          { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+      ]
+    },
+      {
+        legend: 'EDUCATION',
+        children:  [
+          { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+          { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+          { legend: 'AN STP BROKER', link: 'stp.html' },
+          { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+          { legend: 'TRADING BASICS', link: 'basics.html' },
+          { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+          { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+          { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+          { legend: 'GLOSSARY', link: 'terms.html' },
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>Introduction to Technical Analysis</h2>
+          
+          <p>Technical analysis is the study of past price and activity history from charts in order to predict future price movements. The art of technical analysis is to identify patterns in price movements that will then dictate where that market is moving to in the future.</p>
+            
+            
+            <p>It must be remembered and more importantly understood that the market is not just a number of shares of different companies moving in one direction or another. The market is a number of human beings moving the price of those shares in one direction or another. People make the market change, when they demand more of one share or less of another. This is what moves the price. One may feel that a share price in an individual company has gone up because it has posted a large gain in profits that year. It hasnt. The price of the share has gone up because based on that profit news more people wanted to buy that share. The human beings demanding that share have forced the price up. This concept is crucial to your understanding of technical analysis.</p>
+            
+            <p>Human nature remains more or less constant and tends to react to similar situations in consistent ways. By studying the nature of previous market turning points, it is possible to identify certain patterns to develop an understanding of where the market is going to move in the future. Technical analysis therefore is based on the assumption that people will continue to make the same mistakes that they made in the past. Human relationships are extremely complex and never repeat in identical combinations. The markets, which as explained are a reflection of people in action, never duplicate their performance exactly, but the recurrence of similar characteristics is sufficient to enable market watchers to identify major junction, or turning points.</p>
+            
+            <p>Philosophy/Rational behind technical analysis</p>
+            
+            <p>There are three premises on which technical analysis is based:<br/>
+            <b>1.History Repeats Itself</b>
+			<br/>
+            <b>2.Prices Move In Trends</b>
+            <br/>
+            <b>3.Market Action Discounts Everything</b>
+            <br/>
+            History repeats itself
+            </p>
+
+            <p>Much of the body of technical analysis and the study of market action has to do with the study of human psychology. Chart patterns, for example, which have been identified and categorised over the past 100 years, reflect certain standard pictures that appear on price charts. These pictures reveal the bullish or bearish psychology of the market. Since these patterns have worked well in the past, it is assumed that they will continue to work well in the future.</p>
+            
+            <p>Another way of expressing this premise is that the key to understanding the future lies in the study of the past, or that future is just a repetition of the past.</p>
+            
+            <p><span class="strong">Prices move in trends</span><br/>The concept of a trend is absolutely essential to the technical approach. Here again, unless one accepts the premise that markets do in fact trend, there is no point in reading any further. The whole purpose of charting the price action of a market is to identify trends in the early stages of their development and ride on that trend. Furthermore, it is important to realise that a trend in motion is more likely to continue than reverse. A trend will continue until it changes course. This sounds a very obvious concept, but then this is what we are trying to achieve. We are looking for the most probable movement of a market. If the market is going up, it will continue going up until it reverses. If we can identify that market is going up, then we will buy the product until this identification tells us otherwise.</p>
+            
+            <p><span class="strong">Market action discounts everything</span><br/>This statement forms what is probably the cornerstone of technical analysis. Unless this premise is understood and accepted then nothing else really makes sense. The technical analyst believes that everything that could affect the price, fundamental, political, psychological or otherwise, is already reflected in the price of that product. It follows therefore, that analysing companies’ profit forecasts is useless, as the market has already priced that into the value of the share. All that is needed therefore, is a study of the price action. While this claim appears at first hand to be rather fantastical and unbelievable, it is hard to disagree with if one takes time to consider its true meaning.</p>
+            
+            <p>As a rule, chartists do not concern themselves with the reasons why prices rise or fall. Very often, in the early stages of a price trend or at critical turning points, no one seems to know exactly why a market is performing in a certain way. This doesnt matter to a chartist, as he will just look to follow this trend. He knows there are reasons why the market has gone up or down, but he just doesnt believe that knowing what those reasons are is necessary to the forecasting of that price.</p>
+            
+            <p>It follows then that if everything that affects the market price is ultimately reflected in the market place, then all that is necessary is the study of the price action, not why it moved. By studying price charts and a host of other technical indicators, the chartist in effect lets the market tell him which way it is most likely to go.</p>
+            
+            <p>Another very important thing that must be borne in mind when discussing technical analysis is that the practice of it is self-fulfilling. There are many millions of traders that treat technical analysis as a religion. When the chart pattern indicates they should buy, they will buy. If it indicates that they should sell, they will sell. If many millions are following the same pattern, the price will do exactly what they thought it would because they are all doing it. If everyone looked at a chart and decided at some point the market would go up, they would all buy it at this point. As they are all buying it at this point, the market will go up, as demand factors on that product will be greater than supply. There are a million technical analysts all buying at this level. We may as well join them.</p>
+            
+            <p><a href="technical_analysis.html">Category</a>
+                <br/>
+                <a href="determine_trends.html">Next Page</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

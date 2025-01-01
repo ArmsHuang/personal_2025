@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="選單">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__whole">
+        <slider-box :nodes="[
+      {src: 'images/upload/banner.jpg', link: 'us_advantage.html', h3: '我們的優勢', p: '對於個人投資者：客戶將獲利豐厚，因為我們的價格最具透明度', button: '了解更多'},
+      {src: 'images/upload/banner02.jpg', link: 'bitcoin.html', h3: '與MS交易比特幣', p: '', button: '了解更多'},
+      {src: 'images/upload/banner03.jpg', link: 'stp.html', h3: '直通式處理交易經紀商', p: '我們不停的探索新途徑，協助交易者達到交易的精準性', button: '了解更多'},
+
+    ]" :speed="4500"></slider-box>
+        <section class="index__wrap p0">
+          <h2>我們的優勢</h2>
+          <div class="wrap_boxes">
+            <div class="wrap_box"><img src="images/upload/p0_0.jpg" alt="">
+              <h3>高透明度</h3>
+              <p>對於個人投資者：客戶將獲利豐厚，因為我們的價格最具透明度。</p><a href="us_advantage.html">了解更多</a></div>
+            <div class="wrap_box"><img src="images/upload/p0_1.jpg" alt="">
+              <h3>24小時交易市場</h3>
+              <p>外匯交易市場是一週5天24小時的交易時間，從美東時間週日下午5：00到週五下午4：00。</p><a href="us_advantage.html">了解更多</a></div>
+            <div class="wrap_box"><img src="images/upload/p0_2.jpg" alt="">
+              <h3>免費圖表分析</h3>
+              <p>MS集團平臺提供完整的圖表分析，例如：即時價格圖、分鐘圖、小時圖、日圖及週圖。</p><a href="us_advantage.html">了解更多</a></div>
+            <div class="wrap_box"><img src="images/upload/p0_3.jpg" alt="">
+              <h3>資金安全</h3>
+              <p>有全球大銀行作流通後盾，使得我們的客戶能夠安心交易。MS集團客戶的資金與公司資金是分離管理的。</p><a href="us_advantage.html">了解更多</a></div>
+            <div class="wrap_box"><img src="images/upload/p0_4.jpg" alt="">
+              <h3>無隱藏費用</h3>
+              <p>MS集團不收取開戶費及任何隱藏費用。我們致力於提供給客戶最簡便而最優質的服務。<br/><br/></p><a href="us_advantage.html">了解更多</a></div>
+            <div class="wrap_box"><img src="images/upload/p0_5.jpg" alt="">
+              <h3>多層面的安全保障系統</h3>
+              <p>MS集團擁有最先進的科技，我們使用多層面的安全保障系統，以確保客戶的個人資訊的保密性。</p><a href="us_advantage.html">了解更多</a></div>
+          </div>
+        </section>
+        <scroll></scroll>
+ <section class="index__wrap p1">
+          <h2>全球未來發展</h2>
+          <p>未來，MS集團將持續以創新的腳步，以提供優質的服務和自由的金融交易為我們的目標，邁向全世界。</p><img src="images/upload/p1_0.jpg">
+          <h3>個人化的的IB計劃</h3>
+          <p>對於每個經紀商（IB）的獨特​​業務要求，我們量身打造了產品和服務，來滿足這些需求。無論您是個人經紀商或是金融機構，MS集團都會為您提供一系列完整的外匯服務。在MS集團，經紀商將會找到許多擴大並發展業務的機會。我們認為，IB是客戶和清算公司之間必不可少的橋樑，因為他們可以根據個人需要，提供客製化的關注和服務。我們的重點是透過為IB提供必要的支持，幫助他們有效地吸引和服務客戶，來發展和擴大這種世界性的IB網路。</p>
+          <div class="wrap_boxes">
+          <a class="wrap_box" href="global_future.html">宣傳素材</a>
+          
+          <a class="wrap_box" href="global_future.html">IB公司金融培訓講座</a>
+          
+          <a class="wrap_box" href="global_future.html">專業的後援服務</a>
+          
+          <a class="wrap_box" href="global_future.html">以客為尊的IB移民計劃</a>
+          
+          <a class="wrap_box" href="global_future.html">獨一無二的IB再培訓留學計劃</a>
+          
+          <a class="wrap_box" href="global_future.html">全球職業經理人計劃</a></div>
+
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p2">
+           <h2>我們的成員</h2>
+          <div class="wrap_boxes">
+            <div class="wrap_box"><img src="images/upload/p2_0.jpg">
+              <h3><span>首席運營官</span><span>丹尼爾 安德森</span></h3>
+              <p>安德森先生在2009年加入MS集團，主管企業營銷與綜合業務拓展，負責建立集團整個的銷售策略與政策，憑藉20年豐富的金融專業知識與經驗，帶領集團成為運營總資產180億美元的大型投資集團。</p>
+              <p class="strong">曾任：<br/>澳大利亞聯邦銀行首席信息官<br/>(1995~2001)<br/>澳大利亞西太平洋銀行首席運營官<br/>(2002~2005)<br/>澳大利亞澳盛銀行首席運營官<br/>(2006~2009)</p>
+            </div>
+            <div class="wrap_box"><img src="images/upload/p2_1.jpg">
+              <h3><span>首席營銷官</span><span>菲恩 金斯福德</span></h3>
+              <p>金斯福德先生負責在MS集團中對市場營銷進行定位；從澳大利亞出發，放眼全球市場，把握市場機會，制定市場營銷戰略和實施計劃，完成集團的營銷目標。</p>
+              <p class="strong">曾任：<br/>美國德豐傑風險投資公司市場總監<br/>(1998-2003)<br/>美國凱雷投資集團集團市場行銷總監<br/>(2003-2005)<br/>美國貝萊德集團環球市場執行官<br/>(2005-2010)</p>
+            </div>
+            <div class="wrap_box"><img src="images/upload/p2_2.jpg">
+              <h3><span>首席分析師</span><span>托馬斯 辛克萊</span></h3>
+              <p>辛克萊先生長期鑽研並實踐於投資市場，開創出獨辟蹊徑的穩定獲利法，其精辟的分析無人能出其右， 2010年定居於澳大利亞，在2011年正式成為MS集團的的首席分析師。</p>
+              <p class="strong">曾任：<br/>美國德豐傑風險投資公司市場總監<br/>(1998-2003)<br/>美國凱雷投資集團集團市場行銷總監<br/>(2003-2005)<br/>美國貝萊德集團環球市場執行官<br/>(2005-2010)</p>
+            </div>
+            <div class="wrap_box"><img src="images/upload/p2_3.jpg">
+              <h3><span>首席信息官</span><span>傑克 愛德華</span></h3>
+              <p>愛德華先生在2010年成為MS集團的首席信息官，為MS集團資訊部門的最高負責人 ，協助公司迅速的成長，為MS集團最重要的一位角色。</p>
+              <p class="strong">曾任：<br/>澳大利亞聯邦銀行 市場服務經理<br/>(1996-2002)<br/>澳大利亞國民銀行 客戶服務經理<br/>(2003-2006)<br/>澳新銀行 客戶服務主任<br/>(2007-2010)</p>
+            </div>
+          </div>
+          <div class="box-link"><a href="team.html">了解更多</a></div>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p3">
+          <h2>合作夥伴</h2>
+          <p>以下是MS集團提供給我們合作夥伴的資源：<br/><strong>MT客戶管理軟體</strong><br/>對客戶進行高效管理和統計，提升工作績效，制定行銷方案。</p>
+          <p><strong>完善的後臺服務</strong><br/>IB可以集中精力於發展和維持客戶。MS集團總部負責處理客戶的開戶、資金存取、轉帳等問題。我們的客戶支援服務是24小時的，顧客隨時都可以提出問題或入金。</p>
+          <p><strong>目標明確的行銷方案</strong><br/>不論是美洲市場、歐洲市場、亞太市場，我們將從IB和客戶那裏收集建議和意見，以及各種資訊回饋，我們將虛心的與IB共同探討、制定針對不同國家和地區的市場推廣方案。我們的優勢是對市場的敏銳嗅覺、快速反應能力及虛心的接納建議與意見。</p>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p4">
+          <h2>網站安全及穩定保障</h2><img src="images/upload/p4_0.png">
+          <h3>我們珍視與客戶建立的關係，並認為客戶對我們的信任及信心至關重要。我們將竭盡所能確保客戶個人資料的隱私性、完整性及安全性均獲得妥善保護。</h3>
+          <p><strong>對稱性加解密系統</strong><br/>我們的網站採用先進的安全機制 SSL (Secure Sockets Layer) 對稱性加解密系統，由 DigiCert® 憑證機構核發數位憑證 (DigiCert SSLs Certificates)，金鑰長度高達128位元，提供網站全程的資料加密功能，確保任何機密資訊、敏感性資料或大金額轉帳的傳遞過程予以加密，並進行用戶端與伺服器之間的相互鑑別，避免中途被第三人攔截及破解。<br/>128位元的 SSL 安全資料傳輸層是目前全球最堅實的技術，並且被廣泛使用於銀行及大型線上購物網站。我們的網站遵循國際安全機制標準及金融業界對網路交易安全的規範，讓使用者可享有充份安全的電子商務交易環境。</p>
+          <p><strong>DigiCert® 核發數位憑證</strong><br/>本網站經 DigiCert® 認證為安全網站。為確保能提供您一個安全無虞的網站，我們建議您使用下列可啟動 SSL 加密機制的網頁瀏覽器，並需不時地下載網頁瀏覽器最新版本，以取得最佳安全性。</p>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p5">
+          <h2>外匯產品</h2><img src="images/upload/p5_0.jpg">
+          <div class="wrap_boxes">
+            <div class="wrap_box">
+              <p><strong>1.概述</strong><br/><b>流動性最高</b><br/>外匯市場的交易量一天平均超過5兆美元，堪稱全世界流動性最高的市場。因此交易者在任何市場情況都能進出自如，執行上幾乎沒有任何障礙或風險，也沒有每日交易量的限制。</p><a href="fx_product.html">了解更多</a></div>
+            <div class="wrap_box">
+              <p><strong>2.損益計算</strong><br/><b>損益計算</b><br/>(1) 計價貨幣的損益(浮動和變現利潤/損失均換算為美元)： 美元/日元(USDJPY)，美元/瑞士法郎(USDCHF)，美元/加元(USDCAD) (賣價-買價)*合約面值*合約份數/關倉價格=以美元計價的損益</p><a href="fx_product.html">了解更多</a></div>
+            <div class="wrap_box">
+              <p><strong>3.外匯交易實例</strong><br/><b>杠杆式交易</b><br/>開倉價：1.5530<br/>交易規模：100,000<br/>投資成本：1,000<br/>平倉價：1.5630<br/>盈虧點數：1.5630-1.5530=0.01000=100點 1點價值：10美金<br/>淨利/淨損：1,000<br/>投資回報率：1,000/1,000*100%=100%</p><a href="fx_product.html">了解更多</a></div>
+          </div>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p6">
+          <h2>與MS交易比特幣</h2>
+          <p>MS提供比特幣金融衍生品交易，交易形式為差價合約交易。所有MS產品為您提供增強安全性和靈活性的比特幣交易方式，但是每種產品的運作模式不盡相同，適合不同交易需求的投資者。</p><img src="images/upload/p6_0.jpg">
+          <div class="wrap_boxes">
+            <div class="wrap_box">
+              <p><b>比特幣差價合約交易</b><br/>您可以通過差價合約交易，就比特幣價格是否會上升或下跌的趨勢進行交易，且無需實際持有電子貨幣。比特幣價格變動幅度越大，您的交易盈利額度越大（如果與您的交易方向相反，則您的損失則更大）。</p><a href="bitcoin.html">了解更多</a></div>
+            <div class="wrap_box">
+              <p><b>優勢</b><br/>與MS交易比特幣差價合約的交易者，並非實際擁有任何電子貨幣。因此，與真實比特幣交易有關的眾多潛在障礙和風險，均可忽略不計，並且無需持有比特幣錢包。</p><a href="bitcoin.html">了解更多</a></div>
+            <div class="wrap_box">
+              <p><b>比特幣差價合約：風險</b><br/>比特幣差價合約交易損失可能無限大。大部分差價合約為槓桿產品，僅需依照保證金投入，這意味著您僅需投入完整倉位價值的一小部分，即可獲得完整倉位的變動價值。</p><a href="bitcoin.html">了解更多</a></div>
+          </div>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p7">
+          <h2>我們的交易平台</h2>
+          <p>MS集團擁有多款線上交易平臺，滿足客戶的需求。所有平臺均集合了當今市場最受歡迎的MT4智慧交易平臺的功能。MT4平臺是目前行業的領導者，帶給您非同尋常的交易體驗，不僅介面容易操作，而且執行速度快捷、可靠和安全。</p>
+          <div class="wrap_boxes">
+            <div class="wrap_box"><img class="mobile" src="images/upload/p7_0.jpg"><img class="pc" src="images/upload/p7_0_pc.jpg"></div>
+            <div class="wrap_box">
+              <p><strong>選擇MT4的7種理由</strong><br/><b>1.產品多樣化的買賣平臺：</b><br/>您可交易所有的主要資本市場產品。</p>
+              <p><b>2.即時買賣報價：</b><br/>由銀行同業及交易買賣系統提供報價，讓您坐享高透明度並掌握即時資訊。</p>
+              <p><b>3.先進的圖表工具：</b><br/>提供簡單及先進的圖表，讓您盡占先機。</p>
+              <p><b>4.卓越高效前所未有：</b><br/>除為您提供最新報價外，特有的先進科技更為您即時提供買賣及執行指令，超快速度前所未有，且確保所有程式均精確無誤。</p>
+              <p><b>4.卓越高效前所未有：</b><br/>除為您提供最新報價外，特有的先進科技更為您即時提供買賣及執行指令，超快速度前所未有，且確保所有程式均精確無誤。</p>
+              <p><b>5.先進的買賣程式：</b><br/>採用最嶄新的買賣策略，包括下單、止損盤、限價盤以及即時成交指令。</p>
+              <p><b>6.領先於市場的IB管理和報表工具：</b><br/>獲取所有客戶頭寸及相關的即時資訊。</p>
+              <p><b>7.安全可靠及全天候支援：</b><br/>除了完善的買賣平臺外，更配合24小時客戶服務及買賣交易支援，讓您隨時透過電話及電郵，聯繫我們專業的客戶服務代表。</p>
+            </div>
+          </div>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p8">
+          <h2>新手入門</h2>
+          <p><b>外匯介紹</b><br/>雖然外匯市場是世界上交易量最大的金融市場，但是相對於股票，期貨及債券等傳統的金融產品，外匯對於廣大個人投資者來說仍然屬於比較新興的投資產品。這是由於大部分投資者缺乏對外匯市場的深入認識，及對外匯行情波動的理解。不同於在紐約股票交易所和芝加哥商品交易所進行交易的傳統證券及期貨產品，外匯是全球性的24小時交易的金融產品。外匯交易每天開始於新西蘭時間，並按亞洲，歐洲和美洲時差分別開始交易。以前，只有銀行及非銀行的金融機構在外匯市場進行大額交易，以期獲得投機利潤，或平衡貨幣間利率風險。全球外匯市場在過去幾年成長非常迅速。我公司作為實力雄厚的外匯交易商很榮幸地為各大金融機構如各種基金，基金經理及廣大個人投資者提供穩定可靠的外匯交易平臺。</p>
+          <div
+            class="wrap_boxes"><a class="wrap_box" href="gettingstarted.html">什麼是外匯交易？</a><a class="wrap_box" href="gettingstarted.html">貨幣交易的流通性</a><a class="wrap_box" href="gettingstarted.html">貨幣符號</a><a class="wrap_box" href="#">基準貨幣及目標貨幣</a><a class="wrap_box" href="gettingstarted.html">貨幣價值</a><a class="wrap_box" href="gettingstarted.html">外匯交易基礎知識</a></div>
+        </section>
+        <scroll></scroll>
+        <section class="index__wrap p9">
+        <h2>外匯市場的特點</h2>
+        <p>全球外匯市場從澳洲雪梨的星期一早上開盤，直至美國紐約時間星期五晚上收盤。在這期間，全球金融重鎮的外匯交易市場接連開市，因地理位置的不同及時差的銜接及重疊，外匯市場全天候 24 小時運作，全球各地的參與者可隨時進入市場進行交易，也因此造就了其巨額的日交易量及高流通性。</p>
+        <div class="wrap_boxes"><a class="wrap_box" href="fx_feature.html">高流通性</a><a class="wrap_box" href="fx_feature.html">公平透明</a><a class="wrap_box" href="#">保證金交易</a><a class="wrap_box" href="fx_feature.html">不受景氣影響</a><a class="wrap_box" href="fx_feature.html">外匯市場的主要參與者</a></div>
+      </section>
+      <section class="index__wrap p10">
+        <h2>即時外匯貨幣數據</h2><iframe id="frame-one" scrolling="no" frameborder="0" src="http://widgets.myfxbook.com/widgets/quotes-rate.html?symbols=8,9,10,11,12,6,13,14,15,17,7,1,4,2,28,5,29,3,50,51&columns=1,2,3,4" height="597" width="100%"></iframe></section>
+      <scroll></scroll>
+      <section class="index__wrap p11">
+        <h2>直通式處理交易經紀商</h2>
+        <h3>我們不停的探索新途徑，協助交易者達到交易的精準性。</h3>
+        <p><b>直通式處理交易的優勢：</b></p>
+        <div class="wrap_boxes"><a class="wrap_box" href="stp.html">低點差</a><a class="wrap_box" href="stp.html">極低滑點率</a><a class="wrap_box" href="stp.html">無交易員平台，規避人為操控</a><a class="wrap_box" href="stp.html">迅捷的執行力</a><a class="wrap_box" href="stp.html">極具競爭力價格</a><a class="wrap_box" href="stp.html">可即時執行的串流報價</a></div>
+        <div
+          class="box-link"><a href="stp.html">了解更多</a></div>
+      </section>
+      <scroll></scroll>
+      <section class="index__wrap p12">
+      <h2>差價合約</h2><img class="pc" src="images/upload/p12_pc.jpg"><img class="pad" src="images/upload/p12_pad.jpg"><img class="mobile" src="images/upload/p12_mobile.jpg">
+      <p>差價合約 (Contract for Difference，簡稱 CFD) 是一種衍生性金融商品，投資者可進行多種金融商品的交易，但不需實際持有投資商品的標的物或有價證券，例如各種股票、股票指數、債券、期貨、貴金屬、外匯或利率。 差價合約是指交易者與差價合約提供者透過保證金方式，根據交易開盤價與結算價差價以現金方式結算的交易。差價合約商品通常為散戶投資者無法投資的金融商品，使散戶投資者可進行各種股票、股票指數及期貨交易。差價合約交易無需支付任何佣金、交易費用、結算費或印花稅，因此是一種靈活的交易工具。</p>
+      <div class="box-link"><a href="cfds.html">了解更多</a></div>
+      </section>
+      <scroll></scroll>
+      <section class="index__wrap p13">
+    <h2>交易培訓</h2><img class="pc" src="images/upload/p13_pc.jpg"><img class="pad" src="images/upload/p13_pad.jpg"><img class="mobile" src="images/upload/p13_mobile.jpg">
+    <div class="wrap_boxes"><a class="wrap_box" href="basic_analysis.html">基本分析</a><a class="wrap_box" href="basics.html">基本知識</a><a class="wrap_box" href="howtrade_bitcoin.html">如何交易比特幣</a><a class="wrap_box" href="technical_analysis.html">技術分析</a><a class="wrap_box" href="terms.html">常用術語</a></div>
+    </section>
+    
+  <scroll></scroll>
+  <section class="index__wrap p14">
+    <h2>聯繫我們</h2><img class="pc" src="images/upload/p14_pc.jpg"><img class="pad" src="images/upload/p14_pad.jpg"><img class="mobile" src="images/upload/p14_mobile.jpg">
+    <h3>FORTUNE SECURITIES PTY LTD</h3>
+    <section class="contact-box">
+      <aside>
+        <div class="icon0 aside_icon"></div><a>:Level1, 681 murray street west perth wa 6005, australia.</a></aside>
+      <aside>
+        <div class="icon1 aside_icon"></div><a>:tel+61 8 6225 2020</a></aside>
+      <aside>
+        <div class="icon2 aside_icon"></div><a>:cs@mforex.com</a></aside>
+      <aside>
+        <div class="icon3 aside_icon"></div><a>:www.mforex.com</a></aside>
+    </section>
+  </section>
+  </div>
+  </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+
+  <aside class="right-ad">
+    <a href="http://fastpay88.com/projectUrl.php?id=13" target="_blank"><img src="images/upload/right_ad.png"></a>
+  </aside>
+  <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>滾動</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

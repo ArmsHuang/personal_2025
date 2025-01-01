@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '關於我們',  link: 'about_us.html',
+        children:  [
+          { legend: '我們的優勢', link: 'us_advantage.html'},
+          { legend: '全球未來的發展', link: 'global_future.html'},
+          { legend: '我們的成員', link: 'team.html'},
+          { legend: '合作夥伴', link: 'partner.html'},
+          { legend: '網站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理財項目',
+        children:  [
+           { legend: '外匯產品', link: 'fx_product.html'},
+          { legend: '與MS交易比特幣', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培訓',
+        children:  [
+          { legend: '新手入門', link: 'gettingstarted.html'},
+          { legend: '外匯市場特點', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差價合約', link: 'cfds.html'},
+          { legend: '基本知識', link: 'basics.html'},
+          { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技術分析', link: 'technical_analysis.html'},
+          { legend: '常用術語', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>利率</h2>
+          
+          <p><span class="strong">基本分析</span><br/>
+          	除技術分析之外，基本分析是大部份交易者進行交易分析時會留意的分析。</p>
+            
+            <p><span class="strong">利率</span><br/>要數外匯市場其中一個首要影響因素，則非利率莫屬。某一國家的中央銀行或經濟組織將會設定其貨幣的利率。它們調整利率，借以鼓勵貿易及維持對通脹的控制。低利率鼓勵經濟膨脹，因為貸款變得更為便宜。高利率阻礙經濟膨脹，因為"資金成本"變得更加高昂。利率有所轉變，亦會大大影響貨幣價值，我們將會在稍後詳細討論這個主題。</p>
+            
+            <p>買賣美元時，最為重要的是留意聯儲局公開市場委員會(FOMC)的利率決定，聯儲局公開市場委員會負責厘定過夜聯邦基金利率。當聯儲局加息時，以美元計值的資產所提供的收益率將會較高。這一般會吸引更多交易者及投資者。若調低利率，這意味著以美元計值的資產所提供的收益率將會降低，令投資者投資于美元的意欲降低。不過，重要的並不單止是息率本身。聯儲局公開市場委員會決定另外一項舉足輕重的，是隨聯儲局公開市場委員會決定而發表的聲明的語言。事實上，許多時候在公佈決定之際，市場早已消化該項消息；若消息一如所料，市場只會出現較微的波幅。另一方面，該項伴隨發出的聲明將會被逐字分析，以找出聯儲局在下一次會議時將採取什麼行動的蛛絲馬跡。記住，利率決議本身的重要性趨向比對將來利率的預期較低。</p>
+            
+            <p>每只貨幣都附有利率。這幾乎是該個經濟體系強弱的氣壓計。在一個國家的經濟體系隨時間而走強時，價格將傾向上升，因為消費者有能力撥出更多收入消費。我們的收入越多，假期所享受到的便會變得更為優質，而且能夠消耗更大量的貨品及服務。換句話說，將會有更多資金競相追逐同一件貨品，而這將會導致有關貨品的價格提高。價格上升稱為通脹，而這將會受到中央銀行密切注視。若任由通脹飆升，我們的金錢便會大大喪失其購買力，而一般貨品的價格，例如一條麵包，有可能會在一日之內飆升至令人難以置信的水準，例如一百美元一條。這看似是一個遙不可及的情景，但這正是通脹率極高的國家所出現的情況，例如辛巴威。為了在這項危機發生前阻止其發生，中央銀行將會介入及調高利率，從而在通脹失控前遏止通脹壓力。一旦通脹開始產生，便難以阻止，因此聯儲局經常打擊通脹，而且有點近乎偏執地提防通脹。高利率令借入資金變得更為高昂，因而令消費者不欲買入新房子、使用信用卡及承擔任何額外債項。資金變得更加高昂亦導致企業不欲擴展，因為許多業務都是以信貸形式進行，因而經常會被收取利息。最終，高利率隨之而來的代價將會是經濟放緩，直至中央銀行再次開始調低利率為止，而這一次是旨在鼓勵經濟增長及擴張 – 而這種迴圈將會持續下去。嘗試在加強增長的同時維持低通脹，是聯儲局每次召開聯儲局公開市場委員會會議時必需仔細平衡的事項。其他中央銀行亦會在定期會議內商議同樣的事項。</p>
+            
+            <p>透過提高利率，一個國家亦可以增加海外投資者投資于該國的意欲。這方面的邏輯跟任何投資背後的邏輯一樣：投資者將儘量尋求最高的回報可能。藉調高利率，投資于該國的人士的回報將會提高。最終，該貨幣的需求將會增加，因為投資者將會投資在利率較高的地方。藉著高利率、經濟增長及國內金融市場增長而提供最高投資回報的國家傾向吸引最多的海外資金。若一個國家的股票市場造好，提供高利率，海外投資者很可能會將資金匯至該國家。這將會令到此貨幣的需求增加，以致其升值。</p>
+            
+            <p>資金經常跟隨收益率。若一個國家調高其利率，國際對該貨幣的整體興趣將會增加。最近，澳大利亞儲備銀行(RBA)將澳元的利率調高25 個基點至3.25%。澳元兌其他貨幣已經走強，此舉將會令它進一步走強。因此，澳元/美元、澳元/日元、英鎊/澳元等貨幣對已反映出此強勢情況。相反，倘若一個國家的中央銀行調低利率，資金便會自該特定貨幣流出。</p>
+            
+            <p>中央銀行的部份特徵是：<br/>
+				<span class="bullet">&#8226 </span> 它們可以運用龐大的資本儲備。
+                <br/>
+                <span class="bullet">&#8226 </span> 它們有特定的經濟目標。
+                <br/>
+				<span class="bullet">&#8226 </span> 它們監管資金供應及利率。
+                <br/>
+                <span class="bullet">&#8226 </span> 它們設定隔夜借貸利率，以更改支付予本土貨幣的利率。
+                <br/>
+				<span class="bullet">&#8226 </span> 它們買賣政府證券以增加或減少貨幣供應。
+                <br/>
+                <span class="bullet">&#8226 </span> 它們有時候會在公開市場買賣本土貨幣，以影響匯率。
+                <br/>                                
+            </p>
+            
+            <p>顯而易見，利率及利率轉變能夠對一個國家所體現的資金流向構成強大影響。</p>
+            
+            <p>現在就讓我扼要說明資金流向的概念，及正和負資金流向之間的一些差異。</p>
+            
+            <p>正如上一節所討論，資金流向代表由海外調動的資金以投資於一個國家的市場。它們可以大幅影響一個國家貨幣的價格，因為正資金流向顯示投資于該國貨幣的需求，而負資金流向則顯示貨幣需求較供應為弱。</p>
+            
+            <p>根據這個題目的重要性，您可以察覺到單單是中央銀行可能更改利率的討論，都會受到密切注視，而該等討論本身亦會影響相關貨幣對的走勢。明顯地，實際利率轉變的公佈將會在國際經濟舞臺上備受注視，及有可能成為改變貨幣走勢的事件。</p>
+            
+            <p>涉及此過程的主要中央銀行包括加拿大銀行、英倫銀行、日本中央銀行、歐洲中央銀行、聯儲局(美國)、瑞士中央銀行、澳大利亞儲備銀行及新西蘭儲備銀行。</p>
+            
+            <p>個別銀行定期舉行會議，週期一般為4至6個星期，視乎有關銀行而定。</p>
+            
+            <p><a href="basic_analysis.html">回目錄</a>
+                <br/>
+                <a href="transaction_flow.html">上一篇</a>
+                <a href="price_Index.html">下一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

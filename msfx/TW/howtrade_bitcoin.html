@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '關於我們',  link: 'about_us.html',
+        children:  [
+          { legend: '我們的優勢', link: 'us_advantage.html'},
+          { legend: '全球未來的發展', link: 'global_future.html'},
+          { legend: '我們的成員', link: 'team.html'},
+          { legend: '合作夥伴', link: 'partner.html'},
+          { legend: '網站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理財項目',
+        children:  [
+           { legend: '外匯產品', link: 'fx_product.html'},
+          { legend: '與MS交易比特幣', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培訓',
+        children:  [
+          { legend: '新手入門', link: 'gettingstarted.html'},
+          { legend: '外匯市場特點', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差價合約', link: 'cfds.html'},
+          { legend: '基本知識', link: 'basics.html'},
+          { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技術分析', link: 'technical_analysis.html'},
+          { legend: '常用術語', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>如何交易比特幣</h2>
+          <img src="images/trade_bitcoin_mobile.jpg" alt="">
+          <p>在金融投資者認為比特幣是有價值投資的情況下,一般有兩種初始投資方式。第一種投資比特幣方式與購買相同,另一種方式則是使用金融衍生品交易。更多關於金融衍生品的信息，敬請參閱如何與MS交易。</p>
+          
+          <p><span class="strong">通過交易所交易比特幣</span><br/>希望購買實際比特幣的投資者須首先持有比特幣錢包，然後再向錢包中存入比特幣。通過交易所使用傳統貨幣購買比特幣是最常見的比特幣購買方式，然而，交易所須接受信用卡或PayPal支付。<br/>選擇比特幣交易所的關鍵是權衡各項不同的方面，其中安全性和合法性是兩項要點。</p>
+          
+          <p><b>比特幣交易</b><br/>安全性是選擇交易所的重中之重，尤其是在2014年和2015初期Mt.Gox和Bitstamp事件發生之後。Mt.Gox是第一家比特幣交易所，截止2013年初仍為全球最大的比特幣交換所。2013年2月該交易所下線，隨後提交破產申請，聲稱其因為黑客入侵而損失客戶存放在交易所中的75萬比特幣。
+<br/>2014年1月，Bitstamp也因黑客入侵而暫停交易。Bitstamp在數日後恢復交易，卻也此次事件中被盜1.9萬比特幣。<br/>開發者正努力提高比特幣的安全性並且降低黑客盜竊的風險。盡管如此，據估計在2013年，流通中5%以上的比特幣均為非法獲取。</p>
+          
+          <p><b>交易策略</b><br/>一旦您選擇交易，您就需要一個交易策略。大部分交易者選擇每天買入和賣出比特幣，或進行長線投資長期持有比特幣以期待其價格將會上漲。</p>
+          
+          <p><b>通過金融衍生品交易比特幣</b><br/>賣出比特幣相比賣出其他更傳統貨幣來說更為困難，主要因為大部分比特幣交換所並非按照外彙交易等投資方式設計。比特幣交易有一定的復雜性：需持有特定錢包、缺少信用卡或PayPal支付方式以及比特幣的稀缺性。其復雜性意味著比特幣不具備如其他貨幣交易所具備的流動性。</p>
+          <p>因此，希望交易比特幣價格波動的交易者轉入比特幣金融衍生品市場進行投資。衍生品交易無需真正持有任何比特幣。該種交易允許您就比特幣在未來特定時期的價格通過合約進行開倉交易，即你所交易的是比特幣價格的變動方向。<br/>MS提供一系列比特幣金融衍生品交易方式。差價合約和其他產品交易讓您可以規避比特幣自身的限制與風險，並且豐富投資比特幣的方式。</p>
+          
+          <p><b>風險</b><br/>比特幣的劇烈波動性是對交易者產生巨大吸引力的根源，然而風險與波動性如影隨形。比特幣價格可在短時間內劇烈上升或下跌，因此在投資比特幣有風險，需在進行交易前了解有出現快速大額損失的風險。</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

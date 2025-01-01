@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '会员登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx', bgPad: true },
+        { legend: '联繫我们', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '语言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: 'index.html' },
+          { legend: '繁体中文', link: '../TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '关于我们',  link: 'about_us.html',
+       nodes: [
+            { legend: '我们的优势', link: 'us_advantage.html' },
+            { legend: '全球未来发展', link: 'global_future.html' },
+            { legend: '我们的成员', link: 'team.html' },
+            { legend: '合作伙伴', link: 'partner.html' },
+            { legend: '网站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理财项目',
+       nodes: [
+             { legend: '外汇产品', link: 'fx_product.html' },
+            { legend: '与MS交易比特币', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培训',
+       nodes: [
+             { legend: '新手入门', link: 'gettingstarted.html' },
+            { legend: '外汇市场特点', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差价合约', link: 'cfds.html' },
+            { legend: '基本知识', link: 'basics.html' },
+            { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技术分析', link: 'technical_analysis.html' },
+            { legend: '常用术语', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '关于我们',  link: 'about_us.html',
+        children:  [
+          { legend: '我们的优势', link: 'us_advantage.html'},
+          { legend: '全球未来的发展', link: 'global_future.html'},
+          { legend: '我们的成员', link: 'team.html'},
+          { legend: '合作伙伴', link: 'partner.html'},
+          { legend: '网站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理财项目',
+        children:  [
+           { legend: '外汇产品', link: 'fx_product.html'},
+          { legend: '与MS交易比特币', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培训',
+        children:  [
+          { legend: '新手入门', link: 'gettingstarted.html'},
+          { legend: '外汇市场特点', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差价合约', link: 'cfds.html'},
+          { legend: '基本知识', link: 'basics.html'},
+          { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技术分析', link: 'technical_analysis.html'},
+          { legend: '常用术语', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>非农就业资料</h2>
+          
+          <p>每个交易者都知道(或应该知道)经济数字对市场的影响。经济学家收集及向传媒公佈其对数字的预测。若预测与实际数位一致，市场对此数字称为"符合预期(Price in)"，当官方作出公佈时，通常都不会作出太大反应。</p>
+            
+            <p>然而，若预测与实际数字并不吻合，当市场试图就基本上被错误定价而相应调高时，将可能会产生极端市场波动。倘市场重设以达致与实际数字趋于一致时，往往就会造成极端的波动。</p>
+            
+            <p>没有任何经济数字会较美国非农就业资料对上述情景构成更大的影响。</p>
+            
+            <p>首先，就让我们识别数字实际上代表什麽。</p>
+            
+            <p>非农就业资料指美国劳工统计部在每个月第一个星期五美东时间上午8:30公佈的每月调查资料。报告预测美国支薪工人的总数，不包括在以下行业的人士：<br/>
+				<span class="bullet">&#8226 </span> 政府
+                <br/>
+                <span class="bullet">&#8226 </span> 私人家居雇员
+                <br/>
+				<span class="bullet">&#8226 </span> 非牟利组织
+                <br/>
+                <span class="bullet">&#8226 </span> 农民                              
+            </p>
+            
+            <p>一併计算，"非农"雇员製造美国约80%的GDP(国内生产总值)。</p>
+            
+            <p>为取得上述统计数字，美国劳工统计局对约160,000家商业及政府机构进行调查(相当于约400,000个个别工作场所)，以提供有关就业、工作时间、就业人数中的工人收入等详细行业资料。</p>
+            
+            <p>非农就业资料的升跌被视作美国经济健康的指标，因为报告显示出美国商业正在增加还是削减就业人数。</p>
+            
+            <p>非农就业资料已证实为美国近代史上其中一项最重大的基本面指标。作为一个有关每月在农业以外製造的新工数目报告，正数或负数非农就业资料均会令交易者迅速採取行动。若数字较预期为好，往往会令美元走强，若数字差强人意，交易者一般会参考另一个在同日公佈的就业组成部份：失业率。</p>
+            
+            <p>失业率量度失业但正积极寻找工作的人数，这倾向是一个在政治上较为重要的数字。若数字较小，表示正在寻找工作的人士能够找到工作，很可能表示商业正蓬勃发展及经济正在扩张。非农就业资料一般是一个5或6个位的数字，而失业率则是一个百分比。若非农就业资料较预期为好，交易者将会倾向买入美元。然而，若数位较预期为差，交易者便会参考失业率，以检查失业率的转变是正面、负面，还是不变。若失业率上升，便可确定美元走弱。若失业率下降，买入美元的情况往往便会随之发生。若失业率维持不变，美元便会因为看澹者坚持看法而稍为走弱。单单就非农就业资料及失业率而进行交易较为困难，因为许多时候交易者都没有留意最重要的组成部份是什麽，反而集中在加强它们偏差的因素之上。公佈一般会导致市场出现大幅波动。此外，上一个月的数字往往会同时出现调整，及可能会有较大的差异。</p>
+            
+            <p>您可以从上文加以诠释，就这个数位进行交易可能会较为挑战重重。虽然部份交易者会对每个月的第一个星期五引颈以待，但其他交易者却会在公佈前于星期四晚某些时间将交易平台关掉，希望与波幅划清界线。</p>
+            
+            <p>要看图瞭解可能会出现的波幅，请参阅以下2009年10月公佈资料时欧元/美元的5分钟图。公佈在箭咀所示的"公佈非农就业资料"的时间作出。请注意，在头5分钟内，该货币对大跌60点，其后最终自该尖形上升160点。这正是不少交易者希望避开的波幅性质。</p>
+            
+            <p>非农就业资料是一个重要经济数位，因此，在一众其他经济公佈当中，具有最大的潜力令市场变动。不少交易者可以因为跟随此公佈而在短时间内创下或突破当月的交易。非农就业资料分为两部份。首先，就业数字是其中一种评估市场增长，及更为重要的是未来增长潜力的最佳方式。联储局将此数字视为主要经济指标而密切注视。其次，不少交易者都会等到非农就业资料公佈之后(不论数位是什麽)才建立交易，以确保其持仓不会受到预料之外的影响。</p>
+            
+            <p>值得注意的是，于非农就业资料公佈期间的流通量一般较少，这是由于在该时间内市场上几乎没有任何大型银行提供流通量所致。于公佈期间，流通量就好像一个大海突然缩小至游泳池般的大小。不久之后，流通量一般会恢复正常。不少其他主要新闻事件都会产生类似的反应，但只有少数才会像非农就业资料那样产生重大波幅。</p>
+            
+            <p><a href="basic_analysis.html">回目录</a>
+                <br/>
+                <a href="price_Index.html">上一篇</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保护客户资料声明</a><a class="footer__nav__node" href="high_risk_warning.html">风险警告</a><a class="footer__nav__node" href="execution_policy.html">交易执行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>电话:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+     { legend: 'MEMBER LOGIN', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=2', bgPad: true },
+     { legend: 'CONTACT US', link: 'content_us.html' }
+   ],
+   language: {
+     legend: 'LANGUAGE',
+     nodes: [
+       { legend: 'ENGLISH', link: 'index.html' },
+       { legend: '简体中文', link: 'CN/index.html' },
+       { legend: '繁体中文', link: 'TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: 'ABOUT US',  link: 'about_us.html',
+       nodes: [
+         { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+         { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+         { legend: 'OUR GROUPS', link: 'team.html' },
+         { legend: 'PARTNERSHIP', link: 'partner.html' },
+         { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+       ]
+     },
+     {
+       legend: 'FINANCE PROJECT',
+       nodes: [
+         { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+         { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+         { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: 'EDUCATION',
+       nodes: [
+         { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+         { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+         { legend: 'AN STP BROKER', link: 'stp.html' },
+         { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+         { legend: 'TRADING BASICS', link: 'basics.html' },
+         { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+         { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+         { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+         { legend: 'GLOSSARY', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: 'ABOUT US',  link: 'about_us.html',
+        children:  [
+          { legend: 'OUR ADVANTAGES', link: 'us_advantage.html' },
+          { legend: 'FUTURE DEVELOPMENT', link: 'global_future.html' },
+          { legend: 'OUR GROUPS', link: 'team.html' },
+          { legend: 'PARTNERSHIP', link: 'partner.html' },
+          { legend: 'STABILITY AND SECURITY', link: 'security.html' },
+      ]
+    },
+    {
+       legend: 'FINANCE PROJECT',
+        children:  [
+          { legend: 'OUR FOREX PRODUCTS', link: 'fx_product.html' },
+          { legend: 'TRADING BITCOIN WITH MS', link: 'bitcoin.html' },
+          { legend: 'OUR TRADING PLATFORM', link: 'trading_platform.html' },
+      ]
+    },
+      {
+        legend: 'EDUCATION',
+        children:  [
+          { legend: 'NEW TO FOREX', link: 'gettingstarted.html' },
+          { legend: 'FOREXS FEATURE', link: 'fx_feature.html' },
+          { legend: 'AN STP BROKER', link: 'stp.html' },
+          { legend: 'CONTRACTS FOR DIFFERENCES', link: 'cfds.html' },
+          { legend: 'TRADING BASICS', link: 'basics.html' },
+          { legend: 'HOW TO TRADE BITCOIN', link: 'howtrade_bitcoin.html'},
+          { legend: 'FUNDAMENTAL ANALYSIS', link: 'basic_analysis.html' },
+          { legend: 'TECHNICAL ANALYSIS', link: 'technical_analysis.html' },
+          { legend: 'GLOSSARY', link: 'terms.html' },
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+          <h2>Candlestick Charts</h2>
+          
+          <p><b>Candlestick Charts</b><br/>In the 1600s, the Japanese developed a method of technical analysis to analyse the price of rice contracts. This technique is called candlestick charting. Candlestick charts display the open, high, low, and closing prices in a format similar to a modern-day bar-chart, but in a manner that makes it easier to observe the relationship between the opening and closing prices. Each candlestick represents one period (e.g., day) of data.</p>
+          <p class="margin_auto"><img src="images/analysis_01.gif" alt=""></p>
+          
+            
+            <p>Candlesticks display the opening and closing prices as a solid body with the highs and lows as additional vertical lines. A clear distinction is made between up and down price moves. The body of an up move is shown as white and a down move as black.</p>
+            <div class="analysis">
+            	<div class="col-xs-6"><p><img src="images/analysis_02.gif" style=" width:76px; height:156px;">A candlestick showing a DOWNWARD MOVE - the closing price lower than the opening price.</p></div>
+                <div class="col-xs-6"><p><img src="images/analysis_03.gif" style=" width:76px; height:156px;">A candlestick showing an <strong>UPWARD MOVE</strong> - the closing price higher than the opening price.</p></div>
+            </div>
+            
+            <p><strong>Interpretation</strong><br/>Candlestick charts dramatically illustrate changes in the underlying supply/demand lines.<br/>It is obvious for example, that if a stock price moved far below its open but then rallied back into positive territory by the close of market, there is strong support for that stock. You would not obtain this information from looking at a simple line graph. A candlestick shows the movement during the day, and so at what price people were willing to buy or sell. As with all technical analysis, the interpretation of candlestick charts is based primarily on patterns, which have been observed over many centuries as to how they can be used to predict the price movement of a product. The most popular patterns are explained below</p>
+            
+            <p><strong>Bullish Patterns</strong></p>
+            
+            <div class="bullish"><img src="images/analysis_04.gif" style="width:85px; height:158px;"><p>Long white (empty) line. This is a bullish line. It occurs when prices open near the low and close significantly higher near the period's high.
+</p></div>
+			<div class="bullish2"><img src="images/analysis_05.gif" style="width:85px; height:158px;"><p>Hammer. This is a bullish line if it occurs after a significant downtrend. If the line occurs after a significant up-trend, it is called a Hanging Man. A Hammer is identified by a small real body (i.e., a small range between the open and closing prices) and a long lower shadow (i.e., the low is significantly lower than the open, high, and close). The body can be empty or filled-in.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_06.gif" style="width:85px; height:158px;"><p>Piercing line. This is a bullish pattern and the opposite of a dark cloud cover. The first line is a long black line and the second line is a long white line. The second line opens lower than the first line's low, but it closes more than halfway above the first line's real body.
+</p></div>
+            
+			<div class="bullish2"><img src="images/analysis_07.gif" style="width:85px; height:158px;"><p>Bullish engulfing lines. This pattern is strongly bullish if it occurs after a significant downtrend (i.e., it acts as a reversal pattern). It occurs when a small bearish (filled-in) line is engulfed by a large bullish (empty) line.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_08.gif" style="width:85px; height:158px;"><p>Morning star. This is a bullish pattern signifying a potential bottom. The "star" indicates a possible reversal and the bullish (empty) line confirms this. The star can be empty or filled-in.</p></div>
+            
+            
+			<p><strong>Bearish Patterns</strong></p>
+            
+            <div class="bullish"><img src="images/analysis_09.gif" style="width:85px; height:158px;"><p>Long black (filled-in) line. This is a bearish line. It occurs when prices open near the high and close significantly lower near the period's low.
+</p></div>
+			<div class="bullish2"><img src="images/analysis_10.gif" style="width:85px; height:158px;"><p>Hanging Man. These lines are bearish if they occur after a significant uptrend. If this pattern occurs after a significant downtrend, it is called a Hammer. They are identified by small real bodies (i.e., a small range between the open and closing prices) and a long lower shadow (i.e., the low was significantly lower than the open, high, and close). The bodies can be empty or filled-in.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_11.gif" style="width:85px; height:158px;"><p>Dark cloud cover. This is a bearish pattern. The pattern is more significant if the second line's body is below the center of the previous line's body (as illustrated).
+</p></div>
+            
+			<div class="bullish2"><img src="images/analysis_12.gif" style="width:85px; height:158px;"><p>Bearish engulfing lines. This pattern is strongly bearish if it occurs after a significant up-trend (i.e., it acts as a reversal pattern). It occurs when a small bullish (empty) line is engulfed by a large bearish (filled-in) line.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_13.gif" style="width:85px; height:158px;"><p>Evening star. This is a bearish pattern signifying a potential top. The "star" indicates a possible reversal and the bearish (filled-in) line confirms this. The star can be empty or filled-in.</p></div>
+            
+			<div class="bullish2"><img src="images/analysis_14.gif" style="width:85px; height:158px;"><p>Doji star. A star indicates a reversal and a doji indicates indecision. Thus, this pattern usually indicates a reversal following an indecisive period. You should wait for a confirmation (e.g., as in the evening star illustration) before trading a doji star.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_15.gif" style="width:85px; height:158px;"><p>Shooting star. This pattern suggests a minor reversal when it appears after a rally. The star's body must appear near the low price and the line should have a long upper shadow.
+</p></div>
+            
+           <p><strong>Reversal Patterns</strong></p>
+           
+            <div class="bullish"><img src="images/analysis_16.gif" style="width:85px; height:158px;"><p>Long-legged doji. This line often signifies a turning point. It occurs when the open and close are the same, and the range between the high and low is relatively large.
+</p></div>
+			<div class="bullish2"><img src="images/analysis_17.gif" style="width:85px; height:158px;"><p>Dragon-fly doji. This line also signifies a turning point. It occurs when the open and close are the same, and the low is significantly lower than the open, high, and closing prices.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_18.gif" style="width:85px; height:158px;"><p>Gravestone doji. This line also signifies a turning point. It occurs when the open, close, and low are the same, and the high is significantly higher than the open, low, and closing prices.
+</p></div>
+            
+			<div class="bullish2"><img src="images/analysis_19.gif" style="width:85px; height:158px;"><p>Star. Stars indicate reversals. A star is a line with a small real body that occurs after a line with a much larger real body, where the real bodies do not overlap. The shadows may overlap.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_20.gif" style="width:85px; height:158px;"><p>Doji star. A star indicates a reversal and a doji indicates indecision. Thus, this pattern usually indicates a reversal following an indecisive period. You should wait for a confirmation (e.g., as in the evening star illustration) before trading a doji star.</p></div>
+
+			<p><strong>Neutral Patterns</strong></p>
+            
+            <div class="bullish"><img src="images/analysis_21.gif" style="width:85px; height:158px;"><p>Spinning tops. These are neutral lines. They occur when the distance between the high and low, and the distance between the open and close, are relatively small.
+</p></div>
+			<div class="bullish2"><img src="images/analysis_22.gif" style="width:85px; height:158px;"><p>DDoji. This line implies indecision. The security opened and closed at the same price. These lines can appear in several different patterns.
+<br/>
+Double doji lines (two adjacent doji lines) imply that a forceful move will follow a breakout from the current indecision.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_23.gif" style="width:85px; height:158px;"><p>Harami ("pregnant" in english). This pattern indicates a decrease in momentum. It occurs when a line with a small body falls within the area of a larger body.
+<br/>
+In this example, a bullish (empty) line with a long body is followed by a weak bearish (filled-in) line. This implies a decrease in the bullish momentum.
+</p></div>
+            
+			<div class="bullish2"><img src="images/analysis_19.gif" style="width:85px; height:158px;"><p>Star. Stars indicate reversals. A star is a line with a small real body that occurs after a line with a much larger real body, where the real bodies do not overlap. The shadows may overlap.</p></div>
+            
+            <div class="bullish"><img src="images/analysis_20.gif" style="width:85px; height:158px;"><p>Doji star. A star indicates a reversal and a doji indicates indecision. Thus, this pattern usually indicates a reversal following an indecisive period. You should wait for a confirmation (e.g., as in the evening star illustration) before trading a doji star.</p></div>                       
+
+            <p><a href="technical_analysis.html">Category</a>
+                <br/>
+                <a href="determine_trends.html">Previous Page</a>
+                <a href="trend_lines.html">Next Page</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">Privacy Statement</a><a class="footer__nav__node" href="high_risk_warning.html">High Risk Warning</a><a class="footer__nav__node" href="execution_policy.html">Execution Policy</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>Phone:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '会员登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx', bgPad: true },
+        { legend: '联繫我们', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '语言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: 'index.html' },
+          { legend: '繁体中文', link: '../TW/index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '关于我们',  link: 'about_us.html',
+       nodes: [
+            { legend: '我们的优势', link: 'us_advantage.html' },
+            { legend: '全球未来发展', link: 'global_future.html' },
+            { legend: '我们的成员', link: 'team.html' },
+            { legend: '合作伙伴', link: 'partner.html' },
+            { legend: '网站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理财项目',
+       nodes: [
+             { legend: '外汇产品', link: 'fx_product.html' },
+            { legend: '与MS交易比特币', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培训',
+       nodes: [
+             { legend: '新手入门', link: 'gettingstarted.html' },
+            { legend: '外汇市场特点', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差价合约', link: 'cfds.html' },
+            { legend: '基本知识', link: 'basics.html' },
+            { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技术分析', link: 'technical_analysis.html' },
+            { legend: '常用术语', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '关于我们',  link: 'about_us.html',
+        children:  [
+          { legend: '我们的优势', link: 'us_advantage.html'},
+          { legend: '全球未来的发展', link: 'global_future.html'},
+          { legend: '我们的成员', link: 'team.html'},
+          { legend: '合作伙伴', link: 'partner.html'},
+          { legend: '网站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理财项目',
+        children:  [
+           { legend: '外汇产品', link: 'fx_product.html'},
+          { legend: '与MS交易比特币', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培训',
+        children:  [
+          { legend: '新手入门', link: 'gettingstarted.html'},
+          { legend: '外汇市场特点', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差价合约', link: 'cfds.html'},
+          { legend: '基本知识', link: 'basics.html'},
+          { legend: '如何交易比特币', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技术分析', link: 'technical_analysis.html'},
+          { legend: '常用术语', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+            <h2>常用术语</h2>
+          	<img src="images/terms.jpg">
+          <p>A
+          	<br/>
+          	 B
+            <br/>
+            <b>暴涨：</b>用于显示牛市情况被错误预测，市场即将改变走势的词条 
+          </p>
+            
+            <p>C
+            	<br/>
+               <b>长仓：</b>在市场中买入盘(+1)
+               <br/>
+               <b>成交价格幅度：</b>这是某种产品一天中所活动的点数，即该产品高低价之差。
+               <br/>
+               <b>CFD：</b>这个词条代表差价合约。基本上它意味着买卖双方对于一个产品没有实际交货。所有收益和亏损都是通过书面简单地进行理论交易而非通过拥有产品。
+            </p>
+            
+            <p>D
+            	<br/>
+               <b>跌落：</b>产品价格持续下降被称为跌落
+               <br/>
+               <b>跌停：</b>如果产品以靠近当日低价的价格收盘
+               <br/>
+               <b>点：</b>某产品的最小可能价格活动
+               <br/>
+               <b>对冲：</b>该词条用于解释针对一种产品，某人拥有相同的买盘和卖盘编号。市场活动无法影响对冲盘，因为来自其中任何一个盘的收益或损失都会被另一个盘所抵消。
+            </p>
+            
+            <p>E
+            	<br/>
+               F
+               <br/>
+               <b>FX：</b>流通货币
+            </p>
+            
+            <p>G
+            	<br/>
+				<b>GTC：</b>意为无时限盘。基本上如果您开立一个无时限盘，它会持续停留在市场中，直至它达到您设置的价格而被填充或至您决定取消它
+                <br/>
+                <b>GFD：</b>当日有效盘。在当日收市前一直存在于市场中的盘。                             
+            </p>
+            
+            <p>H
+            	<br/>
+              <b>横向：</b>如果产品价格保持不变，即被称为活动横向
+              <br/>
+              <b>回升：</b>当产品价格持续上升时，即被称为回升
+            </p>
+            
+            <p>I
+            	<br/>
+                J
+                <br/>
+                <b>价位值：</b>这是某商品点的美元价值。它预示了某种商品一个独立点活动的收益或亏损额。
+            </p>
+            
+            <p>K
+            	<br/>
+               <b>空仓：</b>在市场中抛盘(-1)
+               <br/>
+               <b>开盘：</b>该词条指某人拥有受市场活动影响的盘
+            </p>
+            
+            <p>L
+            	<br/>
+               <b>点差：</b>买盘和买盘或买卖价格之间的价格差
+            </p>
+            
+            <p>M
+            	<br/>
+               <b>卖空：</b>用于显示熊市情况被错误预测，市场即将改变走势的词条
+               <b>买盘：</b>卖盘价格。双向报价中较低的一个。
+               <b>卖盘：</b>买盘价格。双向报价中较高的一个。
+               <b>Moo：</b>开市交易。此为某产品开市时的价格。
+               <b>Moc：</b>收市交易。此为某产品收市时的价格。
+            </p>
+            
+            <p>N
+            	<br/>
+              <b>牛市：</b>描述市场中预测的价格活动上涨的词条
+              <b>逆转：</b>如果市场正向一个方向活动，突然改变方向，则被称为快速逆转上扬/下跌
+            </p>
+            
+            <p>O
+            	<br/>
+               P
+               <br/>
+               Q
+               <br/>
+               R
+               <br/>
+               S
+               <br/>
+               <b>随机指数和相对强弱指数：</b>技术分析专用语
+               <br/>
+               <b>上涨目标：</b>预测的较高价格目标
+               <br/>
+               <b>双向报价：</b>包含买盘和卖盘两个价格的报价。它用买盘价格和卖盘价格进行报价，并用符号"/"将两个数字隔开。例如，EUR/USD1.3140/45。在这个桉例中，40是买盘价，45是卖盘价。
+               <br/>
+               <b>收盘：</b>该词条描述某个盘在某点开立，但现在被反向盘所抵消以获得利润。
+            </p>
+            
+            <p>T
+            	<br/>
+                U
+                <br/>
+                V
+                <br/>
+                W
+                <br/>
+                X
+                <br/>
+                <b>熊市：</b>描述市场中预测的价格活动下跌的词条
+                <br/>
+                <b>限价盘：</b>这是您可以在市场中设立以避免您不得不时刻盯紧市场的一种盘。您可以用相对于当前市场价格对您更为有利的价格下单。它们将在交易日结束时被取消或直至您取消它们。
+                <br/>
+                <b>止损盘：</b>这种盘可设立(通常当您拥有一个开放盘时)用于避免亏损。您按照比当前市场价格更低的价格下单。这意味着如果市场达到了这个价位，您将会亏损；但如果市场持续跌落冲过此点，通过设置该盘可以保护您不遭受过多损失。
+                <br/>
+                <b>下降目标：</b>预测的较低价格目标
+            </p>
+            
+            <p>Y
+            	<br/>
+                Z
+                <br/>
+                <b>中立：</b>市场价格预测的横向活动
+                <br/>
+                <b>涨停：</b>如果产品以靠近当日高价的价格收盘
+                <br/>
+                <b>走平：</b>如果产品以靠近成交价格幅度中间的价格收盘
+                <br/>
+                <b>最高点：</b>最高价格
+                <br/>
+                <b>最低点：</b>最低价格
+                <br/>
+                <b>阻挡价格：</b>预示市场将出现走低活动的价位
+                <br/>
+                <b>支撑价格：</b>预示市场将出现走高活动的价位
+            </p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保护客户资料声明</a><a class="footer__nav__node" href="high_risk_warning.html">风险警告</a><a class="footer__nav__node" href="execution_policy.html">交易执行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>电话:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>

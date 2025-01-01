@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="viewport">
+  <title>Fortune Securities PTY LTD</title>
+  <script src="bower_components/vue/dist/vue.min.js" type="text/javascript"></script>
+  <script src="bower_components/hammerjs/hammer.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+	  var hmt = hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?4a05b34486517c3ca9700afa315ce086";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+  </script>
+  <link rel="stylesheet" href="style/style.css">
+  <link href="style/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <page-header :menus="{
+   spLinks: [
+        { legend: '會員登入', link: 'https://subscriber.mforex.com/MLMDW/Default.aspx?lang=1', bgPad: true },
+        { legend: '聯繫我們', link: 'content_us.html' }
+   ],
+   language: {
+     legend: '語言',
+     nodes: [
+          { legend: 'ENGLISH', link: '../index.html' },
+          { legend: '简体中文', link: '../CN/index.html' },
+          { legend: '繁体中文', link: 'index.html' }
+     ]
+   },
+   boxGroups: [
+     {
+       legend: '關於我們',  link: 'about_us.html',
+       nodes: [
+            { legend: '我們的優勢', link: 'us_advantage.html' },
+            { legend: '全球未來發展', link: 'global_future.html' },
+            { legend: '我們的成員', link: 'team.html' },
+            { legend: '合作夥伴', link: 'partner.html' },
+            { legend: '網站安全及稳定保障', link: 'security.html'}, 
+       ]
+     },
+     {
+       legend: '理財項目',
+       nodes: [
+             { legend: '外匯產品', link: 'fx_product.html' },
+            { legend: '與MS交易比特幣', link: 'bitcoin.html' },
+            { legend: '交易平台', link: 'trading_platform.html' },
+       ]
+     },
+     {
+       legend: '交易培訓',
+       nodes: [
+             { legend: '新手入門', link: 'gettingstarted.html' },
+            { legend: '外匯市場特點', link: 'fx_feature.html' },
+            { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html' },
+            { legend: '差價合约', link: 'cfds.html' },
+            { legend: '基本知識', link: 'basics.html' },
+            { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+            { legend: '基本分析', link: 'basic_analysis.html' },
+            { legend: '技術分析', link: 'technical_analysis.html' },
+            { legend: '常用術語', link: 'terms.html' },
+
+       ]
+     }
+   ]
+ }" menu-title="Menu">
+      <a href="index.html" slot="logo">
+        <h1 class="header__logo">MS</h1>
+      </a>
+    </page-header>
+    <div class="content-wrap">
+      <div class="wrap__start">
+        <content-nav :now="0" :nodes="
+  [
+    {
+       legend: '關於我們',  link: 'about_us.html',
+        children:  [
+          { legend: '我們的優勢', link: 'us_advantage.html'},
+          { legend: '全球未來的發展', link: 'global_future.html'},
+          { legend: '我們的成員', link: 'team.html'},
+          { legend: '合作夥伴', link: 'partner.html'},
+          { legend: '網站安全及稳定保障', link: 'security.html'},
+      ]
+    },
+    {
+       legend: '理財項目',
+        children:  [
+           { legend: '外匯產品', link: 'fx_product.html'},
+          { legend: '與MS交易比特幣', link: 'bitcoin.html'},
+          { legend: '交易平台', link: 'trading_platform.html'},
+      ]
+    },
+      {
+        legend: '交易培訓',
+        children:  [
+          { legend: '新手入門', link: 'gettingstarted.html'},
+          { legend: '外匯市場特點', link: 'fx_feature.html'},
+          { legend: '直通式处理交易经纪商 (STP)', link: 'stp.html'},
+          { legend: '差價合約', link: 'cfds.html'},
+          { legend: '基本知識', link: 'basics.html'},
+          { legend: '如何交易比特幣', link: 'howtrade_bitcoin.html'},
+          { legend: '基本分析', link: 'basic_analysis.html'},
+          { legend: '技術分析', link: 'technical_analysis.html'},
+          { legend: '常用術語', link: 'terms.html'},
+      ]
+    },
+  ]"></content-nav>
+      </div>
+      <div class="wrap__end">
+        <div class="content__inside">
+<h2>新手入門</h2>
+          <h4>外匯介紹</h4>
+          <p>雖然外匯市場是世界上交易量最大的金融市場，但是相對於股票，期貨及債券等傳統的金融產品，外匯對於廣大個人投資者來說仍然屬於比較新興的投資產品。這是由於大部分投資者缺乏對外匯市場的深入認識，及對外匯行情波動的理解。不同於在紐約股票交易所和芝加哥商品交易所進行交易的傳統證券及期貨產品，外匯是全球性的24小時交易的金融產品。外匯交易每天開始於新西蘭時間，並按亞洲，歐洲和美洲時差分別開始交易。以前，只有銀行及非銀行的金融機構在外匯市場進行大額交易，以期獲得投機利潤，或平衡貨幣間利率風險。全球外匯市場在過去幾年成長非常迅速。我公司作為實力雄厚的外匯交易商很榮幸地為各大金融機構如各種基金，基金經理及廣大個人投資者提供穩定可靠的外匯交易平臺。</p>
+          
+          <h4>什麼是外匯交易？</h4>
+          <p>對於活躍的投資者和交易員來講，外匯交易類似于其他金融投資產品如股票，商品期貨及債券。由於現今的經濟全球化，地區經濟聯盟，外匯交易作為您的投資投資組合的一部分，將有助於平衡投資風險及增加收益機會。
+正像期貨等金融產品，外匯交易允許投資者和交易員買多（Long）或賣空（Short）貨幣組合如：歐元/美元，美元/日元，英鎊/美元等。</p>
+          
+          <p>貨幣組合的價格代表一種貨幣相對於另一種貨幣的價值，它體現著兩種貨幣的當時的相對市場價值。貨幣國家的政治及經濟因素均會影響該貨幣的價值。</p>
+          
+          <p>如果一個國家的通貨膨脹率/利率處於相對穩定且比較低的水準，國民生產總值處於強勢，該國的政治穩定等積極因素會對該貨幣的價值產生正面的影響。基於對外匯價格的波動性，資金分配管理及交易紀律的研究，成功的投資者會從外匯交易中獲利豐厚。<a class="strong underline" href="high_risk_warning.html">( 風險警告 )</a></p>
+          
+          <h4>貨幣交易的流通性</h4>
+          <p>如證券及債券，貨幣間的流動性是有差異的。流動性強的貨幣指政治經濟穩定最穩定的7個國家，分別為美國，日本，英國，法國，德國，義大利，及加拿大。在歐盟開始發行歐元後，流動性最強的貨幣為美元，日元，英鎊，歐元，及加元。這5種外幣的交易量占全球外匯日交易量的80%。</p>
+          
+          <h4>貨幣符號</h4>
+          <p>貨幣符號一般以3個英文字母組成，前兩個字母代表該國的名稱縮寫，第三個字母代表該國貨幣的名稱。</p>
+          
+          <div class="table_content">
+          	<table>
+              <tbody>
+                <tr>
+                  <td class="td_head">範例如：</td>
+                </tr>
+                <tr>
+                  <td class="td_content">USD = United States Dollar</td>
+                </tr>
+                <tr>
+                  <td class="td_content">GBP = Great Britain Pound</td>
+                </tr>
+                <tr>
+                  <td class="td_content">JPY = Japanese Yen</td>
+                </tr>
+                <tr>
+                  <td class="td_content">CAD = Canadian Dollar</td>
+                </tr>
+                <tr>
+                  <td class="td_content">CHF = Confederation Helvetica (Latin for Swiss Confederation) Franc</td>
+                </tr>
+                <tr>
+                  <td class="td_content">NZD = New Zealand Dollar</td>
+                </tr>
+                <tr>
+                  <td class="td_content">AUD = Australian Dollar</td>
+                </tr>
+                <tr>
+                  <td class="td_content">NOK = Norwegian Krone</td>
+                </tr>
+                <tr>
+                	<td class="td_content">SEK = Swedish Krona</td>
+                </tr>
+              </tbody>
+		</table>
+
+          </div>
+          <p><span class="strong">EUR 例外，它不代表國家，只是代表歐元的符號。<br/>歐元與美元的組合，表現為EUR/USD.</span></p>
+			
+            <h4>基準貨幣及目標貨幣</h4>
+            <p>在外匯市場上，2種貨幣的匯率是成對出現的。基準貨幣在前，目標貨幣在後，中間以"/"分隔。在計算該對貨幣的價格時，基準貨幣作為不變數常數，目標貨幣為匯率變數。</p>
+            <p>歐元EUR相對於所有其他交易貨幣為基準貨幣，如：EUR/USD，EUR/GBP，EUR/CHF，EUR/JPY，EUR/CAD等。</p>
+            <p>英鎊對於EUR以外的其他貨幣，均為基準貨幣，如：GBP/USD，GBP/CHF，GBP/JPY，GBP/CAD。只有對歐元為EUR/GBP。</p>
+            <p>美元是第三個主要基準貨幣，如：USD/CAD，USD/JPY，USD/CHF。歐元及英鎊對美元例外，EUR/USD、GBP/USD。</p>
+            
+            <h4>貨幣價值</h4>
+            <p>舉例來講，在EUR/USD，是以EUR為基準貨幣，如果投資者買100，000 EUR/USD，那麼他是買入100，000歐元，同時賣出美元。不管匯率如何變化，100，000 EUR的價值不變。但是，目標貨幣美元則會隨匯率的浮動而產生價值變化。</p>
+            <p>貨幣匯率報價單位，最小精確的小數點後第四位，稱為 pips。外匯用pips體現價格變化，是因為通常外匯交易可以提供高杠杆比例導致實際交易資金量放大，價格很小的變動就會產生盈虧。</p>
+            <p>MS集團對標準帳戶提供最高1:100的杠杆比例。如果以這樣的比例交易，在匯率為1.2000的情況下，100，000歐元的合約需要1200美元保證金。</p>
+            <p>計算方式：保證金= 120,000美元/100 = 1200美元</p>
+            <p>反向計算和約價值：</p>
+			<p>美元價值 = 1.20 * 基準貨幣總額（歐元）= 120,000美元</p>
+            <p>美元價值 = (1.20 + .0001) * 基準貨幣總額（歐元）= 120,010美元</p>
+            <p>1 pip 價值計算：120,010美元 - 120,000美元 為10美元。</p>
+            
+            <h4>外匯交易基礎知識</h4>
+            <span class="strong">外匯的買入與賣出</span>
+            <p>當您交易外匯時，您是如何交易的？實際上，當您下單後，您就已經買入並賣出了一對貨幣。例如：您在1.2000價位提交了EUR/USD，這意味著您買入歐元並且賣出美元。如果歐元對美元的匯率上漲，您的交易就盈利了。</p>
+            <p>如果，您遇到不能通過MS集團平臺進行交易的情況，請打電話通過我公司的交易員下單，您需要按照以下格式提供資訊：</p>
+            
+            <div class="table_content2">
+                <table>
+                	<tbody>
+                    <tr>
+                        <td>"I buy 100,000 Euros and sell the dollar at the Market"</td>
+                    </tr>
+                    <tr>
+                    	<td>or</td>
+                    </tr>
+                    <tr>
+                    	<td>"I buy 500,000 EUR/USD on a 1.2100 stop"</td>
+                    </tr>
+                    <tr>
+                    	<td>or</td>
+                    </tr>
+                    <tr>
+                    	<td>"I buy 100,000 Euros vs. the Dollar at the market"</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <p>請注意，如果您通過交易員下單，請注意必須指明交易價值，貨幣組合，匯率價格及買賣方式（market price，limit price or stop price）的買單還是賣單。</p>
+            <span class="strong">買入/賣出價格</span>
+            <p>正如其他金融產品交易，外匯的報價由買入價及賣出價組成。買入價指做市商的買入貨幣的價格。賣出價是做市商的賣出貨幣的價格。對於交易者來說，則相反。做市商的買入價是交易者的賣出價，做市商的賣出價是交易者的買入價。</p>
+            <p>按照低買高賣的原則，買入價總低於賣出價。買入價及賣出價之間的差額為點差。點差是做市商向個人交易者提供並保障外匯買賣交易的流通性而收取的費用。例如買入價/賣出價如果是1.2050/1.2055，則點差為5 pips.</p>
+            <p>交易商總是願意並可以為投資者建立流通的市場。通過點差，市場就會產生價格的浮動。</p>
+            <p>MS集團提供的主要貨幣點差極低。有些交易量，流動性比較小的貨幣點差會變大。點差是做市商提供外匯交易服務及承擔風險的成本。
+</p>
+			<p>所以，如果市場價格大幅上漲或回落都會造成市場當時的流通性降低，這樣您會看到MS集團的報價點差變大。這是投資者需要瞭解並承擔的市場風險。</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav class="footer__nav"><a class="footer__nav__node" href="privacy_statement.html">保護客戶資料聲明</a><a class="footer__nav__node" href="high_risk_warning.html">風險警告</a><a class="footer__nav__node" href="execution_policy.html">交易執行策略</a></nav>
+      <p class="footer__copyright"><span>COPYRIGHT© 2009-2016 -</span><span>Fortune Securities PTY LTD</span></p>
+      <p><span>電話:</span><a href="tel:+61862252020">+61 8 6225 2020</a></p>
+      <p><span>Email:</span><a href="mailto:cs@mforex.com">cs@mforex.com</a></p>
+    </footer>
+    <aside class="right-ad">
+      <a href="#" target="_blank"><img src="images/upload/right_ad.png"></a>
+    </aside>
+    <aside class="go-top" @click="goTop()"></aside>
+  </div>
+  <script type="text/x-template" id="content-nav-template">
+    <div class="content-nav" v-if="nodes.length &gt;= 1"><a class="content-nav__result" @click.prevent="navAction()" :class="{ 'js--opened': isNavOpen }"><span>{{ nodes[now].legend }}</span></a>
+      <ul class="content-nav__nodes" :class="{ 'js--opened': isNavOpen }"><template v-for="node, i in nodes"><li class="ul__legend">{{ node.legend }}</li><template v-for="child, k in node.children"><transition name="content-nav-node"><li :class="{ 'js--opened': isNavOpen }" :style="{ 'transition-delay': delay(k)}"><a :href="child.link">{{ child.legend }}</a></li></transition></template></template>
+      </ul>
+    </div>
+  </script>
+  <script type="text/x-template" id="page-header-template">
+    <div class="page-header"><template><div class="header__start" :class="{ 'js--active': menuActive }"><slot name="logo"></slot><div class="header__menu"><div class="header--pad header--pad--no-pc"><div class="header__flex"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+    </div>
+    <a class="menu-btn__hamburger" @click.prevent="menuAction">
+      <div class="hamburger__nodes" :class="{ 'js--active': menuActive }"><span class="node"></span></div><span class="hamburger__legend">{{ menuTitle }}</span></a>
+    </div>
+    </div>
+    <div class="header__end" :class="{ 'js--active': menuActive }">
+      <div class="header__box"><template v-for="boxGroup in menus.boxGroups"><box-group :link="boxGroup.link" :target="boxGroup.target" :legend="boxGroup.legend" :nodes="boxGroup.nodes"></box-group></template>
+        <div class="header--mobile header--mobile--but-pc">
+          <div class="sp-links-box"><template v-for="link, i in menus.spLinks"><a class="sp-link" :href="link.link" :class="{ 'js--bg-pad': link.bgPad }">{{ link.legend }}</a></template></div>
+        </div>
+        <box-group :legend="menus.language.legend" :nodes="menus.language.nodes" :append-class="'lang'"></box-group>
+      </div>
+    </div>
+    </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="box-group-template">
+    <div class="header__box__group" @mouseenter.prevent="onMouseenter()" @mouseleave.prevent="onMouseleave()"><template><hr><a class="h2" :href="link" :class="[{ 'js--active': active }, appendClass]">{{ legend }}</a><ul :class="[{ 'js--active': active }, appendClass]"><template v-for="node, i in nodes"><transition name="content-nav-node"><li><a :href="node.link" :target="node.target">{{ node.legend }}</a></li></transition></template></ul>
+      </template>
+    </div>
+  </script>
+  <script type="text/x-template" id="slider-box-template">
+    <div class="slider-box">
+      <div class="slider__wrap">
+        <div class="slider__contents"><template v-for="node, i in nodes"><transition name="shoow-box"><div class="slider__content" :class="nodeClass" v-show="nowNode == i"><img class="slider-box__img" :src="node.src"><div class="contents"><h3>{{ node.h3 }}</h3><p>{{ node.p }}</p><div class="button">{{ node.button }}</div></div></div></transition></template></div>
+        <a
+          class="slider__link" :href="nodes[nowNode].link" :target="nodes[nowNode].target" @mouseenter="stopRoutine()" @mouseleave="routine()">{{ nodes[nowNode].h3 }}</a><a class="slider__last slider__action" @click="nodeAction({action: 'last'})">last</a><a class="slider__next slider__action" @click="nodeAction({action: 'next'})">next</a></div>
+    </div>
+  </script>
+  <script type="text/x-template" id="scroll-template">
+    <div class="scroll" @click="doScroll">
+      <p>scroll</p>
+    </div>
+  </script>
+  <script src="scripts/script.min.js" type="text/javascript"></script>
+</body>
+
+</html>
